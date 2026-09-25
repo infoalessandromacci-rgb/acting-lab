@@ -1,0 +1,192 @@
+name: Build Giorgia Mangiafesta page
+
+on:
+  push:
+    paths:
+      - '.github/workflows/create-giorgia-page.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create or update Giorgia page from Elementor kit
+        env:
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USERNAME: ${{ secrets.WP_USERNAME }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: |
+          python - <<'PY'
+          import base64, json, os, urllib.request, urllib.error
+          from pathlib import Path
+
+          BASE=os.environ['WP_URL'].rstrip('/')
+          AUTH=base64.b64encode((os.environ['WP_USERNAME']+':'+os.environ['WP_APP_PASSWORD'].replace(' ','')).encode()).decode()
+
+          def req(method, route, payload=None, raw=None, headers=None):
+              url=BASE+'/wp-json/'+route.lstrip('/')
+              h={'Authorization':'Basic '+AUTH,'Accept':'application/json','User-Agent':'ActingLab-GitHub-Builder/1.0'}
+              if headers: h.update(headers)
+              data=raw
+              if payload is not None:
+                  data=json.dumps(payload,ensure_ascii=False).encode('utf-8')
+                  h['Content-Type']='application/json; charset=utf-8'
+              r=urllib.request.Request(url,data=data,headers=h,method=method)
+              try:
+                  with urllib.request.urlopen(r,timeout=90) as resp:
+                      body=resp.read().decode('utf-8',errors='replace')
+                      if not body.strip(): return {}
+                      try: return json.loads(body)
+                      except Exception: raise RuntimeError('Non-JSON WordPress response: '+body[:500])
+              except urllib.error.HTTPError as e:
+                  body=e.read().decode('utf-8',errors='replace')
+                  raise RuntimeError(f'WordPress HTTP {e.code}: {body[:1500]}')
+
+          def find(elements, wid):
+              for e in elements:
+                  if not isinstance(e,dict): continue
+                  if str(e.get('id',''))==wid: return e
+                  children=e.get('elements')
+                  if isinstance(children,list):
+                      x=find(children,wid)
+                      if x is not None: return x
+              return None
+
+          def setv(wid, path, value):
+              e=find(data,wid)
+              if e is None:
+                  print('WARN widget not found',wid,path); return
+              cur=e.setdefault('settings',{})
+              for p in path[:-1]:
+                  if isinstance(p,int):
+                      while len(cur)<=p: cur.append({})
+                      cur=cur[p]
+                  else:
+                      if p not in cur or not isinstance(cur[p],(dict,list)):
+                          cur[p] = [] if isinstance(path[path.index(p)+1],int) else {}
+                      cur=cur[p]
+              cur[path[-1]]=value
+
+          def set_counter(wid, number, title):
+              e=find(data,wid)
+              if e is None: return
+              s=e.setdefault('settings',{})
+              s['starting_number']=0
+              s['ending_number']=number
+              s['prefix']=''
+              s['suffix']=''
+              s['title']=title
+
+          # Load About US template (ID 47) from the working collection endpoint.
+          templates=req('GET','wp/v2/elementor_library?context=edit&per_page=100')
+          source=next((x for x in templates if int(x.get('id',0))==47),None)
+          if not source: raise RuntimeError('Elementor template 47 not found')
+          raw_data=(source.get('meta') or {}).get('_elementor_data')
+          if not raw_data: raise RuntimeError('Elementor template 47 has no data')
+          data=json.loads(raw_data)
+
+          # Upload/reuse Giorgia portrait.
+          existing=req('GET','wp/v2/media?search=giorgia-mangiafesta&per_page=20&_fields=id,slug,source_url,alt_text')
+          media=next((m for m in existing if m.get('slug')=='giorgia-mangiafesta'),None)
+          if not media:
+              blob=Path('assets/giorgia-mangiafesta.jpg').read_bytes()
+              media=req('POST','wp/v2/media',raw=blob,headers={
+                  'Content-Type':'image/jpeg',
+                  'Content-Disposition':'attachment; filename="giorgia-mangiafesta.jpg"'
+              })
+              media=req('POST',f'wp/v2/media/{media["id"]}',payload={
+                  'title':'Giorgia Mangiafesta',
+                  'alt_text':'Giorgia Mangiafesta, fondatrice e docente di Acting Lab'
+              })
+          media_id=int(media['id']); media_url=media['source_url']
+
+          # HERO / breadcrumb
+          setv('87281ac',['title'],'Giorgia Mangiafesta')
+          setv('68df0282',['icon_list',0,'text'],'Home')
+          setv('68df0282',['icon_list',0,'link','url'],BASE)
+          setv('68df0282',['icon_list',2,'text'],'Giorgia Mangiafesta')
+
+          # Intro: approach to acting.
+          setv('74079ad7',['editor'],'''<p><strong>Fondatrice e docente di Acting Lab</strong>, Giorgia Mangiafesta porta nella formazione attoriale un approccio profondamente umano: l’obiettivo non è semplicemente “rappresentare” un personaggio, ma viverne davvero l’esperienza.</p><p>Il lavoro mette al centro presenza, ascolto, libertà espressiva ed emozione autentica. Le battute non sono un meccanismo da ripetere: ciò che conta è quello che accade nel momento presente, nella relazione con il partner, con il pubblico e con sé stessi.</p>''')
+
+          # First facts.
+          set_counter('47a689e4',5,'Anni di formazione al Lee Strasberg')
+          set_counter('217800ef',2015,'Acting Lab nasce nel')
+
+          # Areas of work.
+          areas={
+              '4b1482da':'Il corpo',
+              '135cfcb1':'Il rilassamento',
+              '699733ef':'La voce',
+              '2ea456b0':'Il lavoro sensoriale',
+              '6c7f72e3':'La musica',
+              '551da820':'L’ascolto',
+              '17d4af71':'L’improvvisazione'
+          }
+          for wid,title in areas.items(): setv(wid,['title'],title)
+
+          setv('2b58df2',['description_text'],'Un training che unisce corpo, voce, rilassamento, ascolto, lavoro sensoriale, musica, creatività e improvvisazione per aiutare l’attore a essere presente, aperto e autentico in scena.')
+
+          # Biography.
+          setv('1154cbc7',['editor'],'''<p>Ho iniziato a recitare a quattordici anni al Teatro dei Satiri a Roma. L’interesse per le dinamiche emotive e personali che entrano nella costruzione di un personaggio mi ha portato a scegliere gli studi di psicologia.</p><p>Dopo la laurea, nel 1998, mi sono trasferita a New York, dove ho studiato per cinque anni al Lee Strasberg Theatre Institute, vivendo contemporaneamente numerose esperienze teatrali.</p><p>Rientrata in Italia nel 2004, sono stata per molti anni assistente di Beatrice Bracco nel suo Teatro Blu, presso l’Officina d’Arte al Borghetto. Quell’incontro ha ampliato il mio lavoro dalla costruzione del personaggio alla regia e alla creazione completa della scena teatrale.</p><p>Il mio percorso di insegnamento è iniziato nel 2009 e nel 2015 ho fondato Acting Lab, un laboratorio dedicato alla formazione dell’attore e alla ricerca artistica.</p>''')
+
+          setv('7b45ba38',['editor'],'<p>Un percorso tra recitazione, psicologia e ricerca scenica.</p>')
+          setv('476dedbb',['editor'],'<p>Dalla tecnica alla presenza: il lavoro parte sempre dalla persona.</p>')
+          setv('26349dd2',['title'],'Il mio percorso')
+
+          # Timeline / numbers already provided by the template.
+          set_counter('445bc828',14,'Inizio a recitare')
+          set_counter('70a18764',1998,'New York e Lee Strasberg')
+          set_counter('6a9d1fea',2009,'Inizio dell’insegnamento')
+          set_counter('14e16dd6',2004,'Rientro in Italia')
+          set_counter('596c1e5f',2009,'Insegnamento dal')
+          set_counter('7975df95',2015,'Fondazione Acting Lab')
+          set_counter('64197ed4',5,'Anni al Lee Strasberg')
+
+          # Replace the two generic corporate photographs with Giorgia's portrait.
+          for wid in ('5eeb6093','d46fb22'):
+              e=find(data,wid)
+              if e is not None:
+                  old=(e.setdefault('settings',{}).get('image') or {})
+                  e['settings']['image']={
+                      'id':media_id,'url':media_url,'alt':'Giorgia Mangiafesta',
+                      'source':'library','size':old.get('size','')
+                  }
+
+          # Create or update the draft page.
+          matches=req('GET','wp/v2/pages?slug=giorgia-mangiafesta&context=edit&per_page=20')
+          payload={
+              'title':'Giorgia Mangiafesta',
+              'slug':'giorgia-mangiafesta',
+              'status':'draft',
+              'template':'elementor_header_footer',
+              'meta':{
+                  '_elementor_edit_mode':'builder',
+                  '_elementor_template_type':'wp-page',
+                  '_elementor_data':json.dumps(data,ensure_ascii=False,separators=(',',':'))
+              }
+          }
+          if matches:
+              page=req('POST',f'wp/v2/pages/{matches[0]["id"]}',payload=payload)
+          else:
+              page=req('POST','wp/v2/pages',payload=payload)
+
+          result={
+              'id':page.get('id'),
+              'status':page.get('status'),
+              'slug':page.get('slug'),
+              'link':page.get('link'),
+              'media_id':media_id,
+              'media_url':media_url
+          }
+          print(json.dumps(result,ensure_ascii=False,indent=2))
+          Path('giorgia-page-result.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: giorgia-page-result
+          path: giorgia-page-result.json
