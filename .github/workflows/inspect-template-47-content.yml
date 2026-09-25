@@ -1,0 +1,72 @@
+name: Inspect Elementor About visible content
+
+on:
+  push:
+    paths:
+      - '.github/workflows/inspect-template-47-content.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract visible content
+        env:
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USERNAME: ${{ secrets.WP_USERNAME }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: |
+          python - <<'PY'
+          import base64, json, os, re, urllib.request
+          url=os.environ['WP_URL'].rstrip('/') + '/wp-json/wp/v2/elementor_library?context=edit&include=47&per_page=1'
+          auth=base64.b64encode((os.environ['WP_USERNAME']+':'+os.environ['WP_APP_PASSWORD'].replace(' ','')).encode()).decode()
+          req=urllib.request.Request(url, headers={'Authorization':'Basic '+auth,'Accept':'application/json','User-Agent':'ActingLab-GitHub-Inspect/1.1'})
+          with urllib.request.urlopen(req, timeout=60) as r:
+              items=json.loads(r.read().decode())
+          src=items[0]
+          data=json.loads((src.get('meta') or {})['_elementor_data'])
+          fields=[]; images=[]
+          markers=('title','editor','text','content','label','placeholder','message','caption','description','button','heading','subheading')
+          excluded=('typography','color','align','size','width','height','unit','animation','position','margin','padding','gap','offset','url','link','css','font','weight','transform','decoration','family','style','border','background','icon','view','orientation','direction')
+          def walk_value(widget_id,widget_type,v,path):
+              if isinstance(v,str):
+                  if not path: return
+                  leaf=str(path[-1]).lower()
+                  if not any(m in leaf for m in markers): return
+                  if any(x in leaf for x in excluded): return
+                  stripped=re.sub('<[^>]+>',' ',v)
+                  stripped=' '.join(stripped.split())
+                  if stripped:
+                      fields.append({'widget_id':widget_id,'widget_type':widget_type,'path':path,'value':v,'text':stripped})
+              elif isinstance(v,list):
+                  for i,x in enumerate(v): walk_value(widget_id,widget_type,x,path+[i])
+              elif isinstance(v,dict):
+                  for k,x in v.items(): walk_value(widget_id,widget_type,x,path+[k])
+          def walk(elements):
+              for e in elements:
+                  if not isinstance(e,dict): continue
+                  wid=str(e.get('id','')); wt=str(e.get('widgetType','')); s=e.get('settings') or {}
+                  walk_value(wid,wt,s,[])
+                  if wt=='image':
+                      im=s.get('image') or {}
+                      if im.get('url'): images.append({'widget_id':wid,'id':im.get('id'),'url':im.get('url'),'alt':im.get('alt','')})
+                  for key in ('background_image','background_overlay_image'):
+                      im=s.get(key) or {}
+                      if isinstance(im,dict) and im.get('url'): images.append({'widget_id':wid,'setting':key,'id':im.get('id'),'url':im.get('url'),'alt':im.get('alt','')})
+                  if isinstance(e.get('elements'),list): walk(e['elements'])
+          walk(data)
+          out={'template_id':47,'title':(src.get('title') or {}).get('raw'),'template':src.get('template'),'visible_fields':fields,'images':images}
+          os.makedirs('queue/results',exist_ok=True)
+          open('queue/results/template-47-visible-content.json','w',encoding='utf-8').write(json.dumps(out,ensure_ascii=False,indent=2))
+          PY
+      - name: Commit visible content summary
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add queue/results/template-47-visible-content.json
+          git commit -m "Inspect visible content in Elementor About template" || exit 0
+          git push
