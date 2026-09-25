@@ -1,0 +1,34 @@
+{
+  "ok": true,
+  "processed_at": "2026-09-25T16:46:12.812119+00:00",
+  "source": "2026-09-25-find-giorgia-page-v2.json",
+  "command": {
+    "action": "wp_rest",
+    "method": "GET",
+    "route": "wp/v2/pages?context=edit&search=Giorgia&per_page=20&_fields=id,title,slug,status,link,template"
+  },
+  "result": [
+    {
+      "id": 193,
+      "slug": "giorgia",
+      "status": "publish",
+      "link": "https://actinglab.it/giorgia/",
+      "title": {
+        "raw": "giorgia",
+        "rendered": "giorgia"
+      },
+      "template": ""
+    },
+    {
+      "id": 7,
+      "slug": "homepage",
+      "status": "publish",
+      "link": "https://actinglab.it/homepage/",
+      "title": {
+        "raw": "homepage",
+        "rendered": "homepage"
+      },
+      "template": "elementor_header_footer"
+    }
+  ]
+}
