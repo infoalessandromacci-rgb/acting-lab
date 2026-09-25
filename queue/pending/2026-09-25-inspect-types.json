@@ -1,0 +1,5 @@
+{
+  "action": "wp_rest",
+  "method": "GET",
+  "route": "wp/v2/types?context=edit"
+}
