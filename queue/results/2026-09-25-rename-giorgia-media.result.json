@@ -1,0 +1,151 @@
+{
+  "ok": true,
+  "processed_at": "2026-09-25T16:52:30.524697+00:00",
+  "source": "2026-09-25-rename-giorgia-media.json",
+  "command": {
+    "action": "wp_rest",
+    "method": "POST",
+    "route": "wp/v2/media/198",
+    "payload": {
+      "slug": "giorgia-mangiafesta-ritratto"
+    }
+  },
+  "result": {
+    "id": 198,
+    "date": "2026-09-25T16:51:28",
+    "date_gmt": "2026-09-25T16:51:28",
+    "guid": {
+      "rendered": "https://actinglab.it/wp-content/uploads/2026/09/giorgia-mangiafesta.jpg",
+      "raw": "https://actinglab.it/wp-content/uploads/2026/09/giorgia-mangiafesta.jpg"
+    },
+    "modified": "2026-09-25T16:52:31",
+    "modified_gmt": "2026-09-25T16:52:31",
+    "slug": "giorgia-mangiafesta-ritratto",
+    "status": "inherit",
+    "type": "attachment",
+    "link": "https://actinglab.it/giorgia-mangiafesta-ritratto/",
+    "title": {
+      "raw": "Giorgia Mangiafesta",
+      "rendered": "Giorgia Mangiafesta"
+    },
+    "author": 2,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "closed",
+    "template": "",
+    "meta": [],
+    "permalink_template": "https://actinglab.it/?attachment_id=198",
+    "generated_slug": "giorgia-mangiafesta",
+    "class_list": [
+      "post-198",
+      "attachment",
+      "type-attachment",
+      "status-inherit",
+      "hentry"
+    ],
+    "description": {
+      "raw": "",
+      "rendered": "<p class=\"attachment\"><a href='https://actinglab.it/wp-content/uploads/2026/09/giorgia-mangiafesta.jpg'><img fetchpriority=\"high\" decoding=\"async\" width=\"300\" height=\"200\" src=\"https://actinglab.it/wp-content/uploads/2026/09/giorgia-mangiafesta.jpg\" class=\"attachment-medium size-medium\" alt=\"Giorgia Mangiafesta, fondatrice e docente di Acting Lab\" /></a></p>\n"
+    },
+    "caption": {
+      "raw": "",
+      "rendered": ""
+    },
+    "alt_text": "Giorgia Mangiafesta, fondatrice e docente di Acting Lab",
+    "media_type": "image",
+    "mime_type": "image/jpeg",
+    "media_details": {
+      "width": 900,
+      "height": 599,
+      "file": "2026/09/giorgia-mangiafesta.jpg",
+      "filesize": 13491,
+      "sizes": {},
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "post": null,
+    "source_url": "https://actinglab.it/wp-content/uploads/2026/09/giorgia-mangiafesta.jpg",
+    "missing_image_sizes": [
+      "thumbnail",
+      "medium",
+      "medium_large"
+    ],
+    "filename": "giorgia-mangiafesta.jpg",
+    "filesize": 13491,
+    "exif_orientation": 1,
+    "image_output_format": null,
+    "image_save_progressive": false,
+    "image_quality": {
+      "default": 82,
+      "sizes": []
+    },
+    "_links": {
+      "self": [
+        {
+          "href": "https://actinglab.it/wp-json/wp/v2/media/198",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://actinglab.it/wp-json/wp/v2/media"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://actinglab.it/wp-json/wp/v2/types/attachment"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://actinglab.it/wp-json/wp/v2/users/2"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://actinglab.it/wp-json/wp/v2/comments?post=198"
+        }
+      ],
+      "wp:action-unfiltered-html": [
+        {
+          "href": "https://actinglab.it/wp-json/wp/v2/media/198"
+        }
+      ],
+      "wp:action-assign-author": [
+        {
+          "href": "https://actinglab.it/wp-json/wp/v2/media/198"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+}
