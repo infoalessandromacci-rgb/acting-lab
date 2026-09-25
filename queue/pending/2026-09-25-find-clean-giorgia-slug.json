@@ -1,0 +1,5 @@
+{
+  "action": "wp_rest",
+  "method": "GET",
+  "route": "wp/v2/pages?slug=giorgia-mangiafesta&context=edit&per_page=100&_fields=id,title,slug,status"
+}
