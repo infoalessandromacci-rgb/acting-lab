@@ -1,0 +1,5 @@
+{
+  "action": "wp_rest",
+  "method": "GET",
+  "route": "wp/v2/elementor_library?context=edit&per_page=100&_fields=id,title,slug,status,template,meta"
+}
