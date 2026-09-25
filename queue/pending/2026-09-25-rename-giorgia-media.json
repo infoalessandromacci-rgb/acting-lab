@@ -1,0 +1,8 @@
+{
+  "action": "wp_rest",
+  "method": "POST",
+  "route": "wp/v2/media/198",
+  "payload": {
+    "slug": "giorgia-mangiafesta-ritratto"
+  }
+}
