@@ -1,0 +1,218 @@
+{
+  "ok": true,
+  "processed_at": "2026-09-25T16:50:14.179778+00:00",
+  "source": "2026-09-25-giorgia-texts-dryrun.json",
+  "command": {
+    "action": "replace_text_batch",
+    "page_id": 193,
+    "dry_run": true,
+    "replacements": [
+      {
+        "widget_id": "29fb6269",
+        "path": [
+          "title"
+        ],
+        "old_text": "About",
+        "new_text": "Giorgia Mangiafesta"
+      },
+      {
+        "widget_id": "a430125",
+        "path": [
+          "icon_list",
+          2,
+          "text"
+        ],
+        "old_text": "About",
+        "new_text": "Giorgia Mangiafesta"
+      },
+      {
+        "widget_id": "625e4fd6",
+        "path": [
+          "editor"
+        ],
+        "old_text": "<p>It has stood the test of time and proceeds Elevate your brand with the Agencyo Agency – everything from strategy to advertising &amp; scale.</p>",
+        "new_text": "<p>Ho iniziato a recitare a quattordici anni al Teatro dei Satiri a Roma. Dopo la laurea in Psicologia, nel 1998 mi sono trasferita a New York, dove ho studiato per cinque anni al Lee Strasberg Theatre Institute. Tornata in Italia nel 2004, ho proseguito il mio percorso teatrale e dal 2009 insegno recitazione. Nel 2015 ho fondato Acting Lab, un laboratorio dedicato alla formazione dell’attore e alla ricerca artistica.</p>"
+      },
+      {
+        "widget_id": "6d05307b",
+        "path": [
+          "title"
+        ],
+        "old_text": " art direction",
+        "new_text": " corpo"
+      },
+      {
+        "widget_id": "43c2b0db",
+        "path": [
+          "title"
+        ],
+        "old_text": " motion graphics",
+        "new_text": " rilassamento"
+      },
+      {
+        "widget_id": "4721153c",
+        "path": [
+          "title"
+        ],
+        "old_text": " branding",
+        "new_text": " voce"
+      },
+      {
+        "widget_id": "41eaa72b",
+        "path": [
+          "title"
+        ],
+        "old_text": " product design",
+        "new_text": " lavoro sensoriale"
+      },
+      {
+        "widget_id": "4c93adcd",
+        "path": [
+          "title"
+        ],
+        "old_text": " development",
+        "new_text": " ascolto"
+      },
+      {
+        "widget_id": "12f79efd",
+        "path": [
+          "title"
+        ],
+        "old_text": " digital marketing",
+        "new_text": " creatività"
+      },
+      {
+        "widget_id": "709d7576",
+        "path": [
+          "title"
+        ],
+        "old_text": " strategy",
+        "new_text": " improvvisazione"
+      },
+      {
+        "widget_id": "4f875078",
+        "path": [
+          "description_text"
+        ],
+        "old_text": "Make your business prosper with our great team of experts. We’ll make your.",
+        "new_text": "Il mio lavoro mette al centro presenza, ascolto e libertà espressiva. Utilizzo rilassamento, lavoro corporeo, voce, musica, esercizi sensoriali, visualizzazioni e improvvisazione per aiutare l’attore a vivere davvero ciò che accade in scena."
+      },
+      {
+        "widget_id": "1a1022fd",
+        "path": [
+          "editor"
+        ],
+        "old_text": "consumers today rely heavily on digital means to research products. we research a brand of bldend engaging with it, according to the meanwhile, 51% of consumers",
+        "new_text": "Per me acting significa fare, agire, vivere. Non esistono toni rigidi o intonazioni fissate in anticipo: ciò che conta è il momento presente, l’ascolto profondo del partner e la capacità di lasciarsi toccare da ciò che accade, reagendo in modo autentico."
+      },
+      {
+        "widget_id": "3cc935a1",
+        "path": [
+          "editor"
+        ],
+        "old_text": "<p>We helped to get companies</p>",
+        "new_text": "<p>Vivere davvero la scena</p>"
+      },
+      {
+        "widget_id": "7de97869",
+        "path": [
+          "editor"
+        ],
+        "old_text": "<p>We helped to get companies</p>",
+        "new_text": "<p>Ascoltare davvero l’altro</p>"
+      },
+      {
+        "widget_id": "7310768d",
+        "path": [
+          "title"
+        ],
+        "old_text": "Work",
+        "new_text": "Il mio percorso"
+      }
+    ]
+  },
+  "result": {
+    "page_id": 193,
+    "dry_run": true,
+    "total": 15,
+    "successful": 0,
+    "failed": 15,
+    "results": [
+      {
+        "index": 1,
+        "ok": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "index": 2,
+        "ok": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "index": 3,
+        "ok": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "index": 4,
+        "ok": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "index": 5,
+        "ok": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "index": 6,
+        "ok": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "index": 7,
+        "ok": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "index": 8,
+        "ok": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "index": 9,
+        "ok": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "index": 10,
+        "ok": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "index": 11,
+        "ok": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "index": 12,
+        "ok": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "index": 13,
+        "ok": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "index": 14,
+        "ok": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "index": 15,
+        "ok": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    ]
+  }
+}

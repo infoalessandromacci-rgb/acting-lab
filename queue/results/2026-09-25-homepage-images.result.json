@@ -1,0 +1,10 @@
+{
+  "ok": false,
+  "processed_at": "2026-09-25T16:50:23.675856+00:00",
+  "source": "2026-09-25-homepage-images.json",
+  "command": {
+    "action": "read_elementor_images",
+    "page_id": 7
+  },
+  "error": "Expecting value: line 1 column 1 (char 0)"
+}
