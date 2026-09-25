@@ -1,0 +1,1506 @@
+{
+  "ok": true,
+  "processed_at": "2026-09-25T16:33:19.458147+00:00",
+  "source": "2026-09-25-inspect-types.json",
+  "command": {
+    "action": "wp_rest",
+    "method": "GET",
+    "route": "wp/v2/types?context=edit"
+  },
+  "result": {
+    "post": {
+      "capabilities": {
+        "edit_post": "edit_post",
+        "read_post": "read_post",
+        "delete_post": "delete_post",
+        "edit_posts": "edit_posts",
+        "edit_others_posts": "edit_others_posts",
+        "delete_posts": "delete_posts",
+        "publish_posts": "publish_posts",
+        "read_private_posts": "read_private_posts",
+        "read": "read",
+        "delete_private_posts": "delete_private_posts",
+        "delete_published_posts": "delete_published_posts",
+        "delete_others_posts": "delete_others_posts",
+        "edit_private_posts": "edit_private_posts",
+        "edit_published_posts": "edit_published_posts",
+        "create_posts": "edit_posts"
+      },
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "visibility": {
+        "show_in_nav_menus": true,
+        "show_ui": true
+      },
+      "viewable": true,
+      "labels": {
+        "name": "Articoli",
+        "singular_name": "Articolo",
+        "add_new": "Aggiungi",
+        "add_new_item": "Aggiungi articolo",
+        "edit_item": "Modifica articolo",
+        "new_item": "Nuovo articolo",
+        "view_item": "Visualizza articolo",
+        "view_items": "Visualizza gli articoli",
+        "search_items": "Cerca articoli",
+        "not_found": "Nessun articolo trovato.",
+        "not_found_in_trash": "Nessun articolo trovato nel cestino.",
+        "parent_item_colon": null,
+        "all_items": "Tutti gli articoli",
+        "archives": "Archivi articoli",
+        "attributes": "Attributi dell'articolo",
+        "insert_into_item": "Inserisci nell'articolo",
+        "uploaded_to_this_item": "Caricato in questo articolo",
+        "featured_image": "Immagine in evidenza",
+        "set_featured_image": "Imposta immagine in evidenza",
+        "remove_featured_image": "Rimuovi immagine in evidenza",
+        "use_featured_image": "Usa come immagine in evidenza",
+        "filter_items_list": "Filtra elenco articoli",
+        "filter_by_date": "Filtra per data",
+        "items_list_navigation": "Navigazione elenco articoli",
+        "items_list": "Elenco degli articoli",
+        "item_published": "Articolo pubblicato.",
+        "item_published_privately": "Articolo pubblicato privatamente.",
+        "item_reverted_to_draft": "Articolo ripristinato come bozza.",
+        "item_trashed": "Articolo cestinato.",
+        "item_scheduled": "Articolo programmato.",
+        "item_updated": "Articolo aggiornato.",
+        "item_link": "Link articolo",
+        "item_link_description": "Un link a un articolo.",
+        "menu_name": "Articoli",
+        "name_admin_bar": "Articolo"
+      },
+      "name": "Articoli",
+      "slug": "post",
+      "icon": "dashicons-admin-post",
+      "supports": {
+        "title": true,
+        "editor": [
+          {
+            "notes": true
+          }
+        ],
+        "author": true,
+        "thumbnail": true,
+        "excerpt": true,
+        "trackbacks": true,
+        "custom-fields": true,
+        "comments": true,
+        "revisions": true,
+        "post-formats": true,
+        "autosave": true,
+        "elementor": true
+      },
+      "taxonomies": [
+        "category",
+        "post_tag"
+      ],
+      "rest_base": "posts",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/posts"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "page": {
+      "capabilities": {
+        "edit_post": "edit_page",
+        "read_post": "read_page",
+        "delete_post": "delete_page",
+        "edit_posts": "edit_pages",
+        "edit_others_posts": "edit_others_pages",
+        "delete_posts": "delete_pages",
+        "publish_posts": "publish_pages",
+        "read_private_posts": "read_private_pages",
+        "read": "read",
+        "delete_private_posts": "delete_private_pages",
+        "delete_published_posts": "delete_published_pages",
+        "delete_others_posts": "delete_others_pages",
+        "edit_private_posts": "edit_private_pages",
+        "edit_published_posts": "edit_published_pages",
+        "create_posts": "edit_pages"
+      },
+      "description": "",
+      "hierarchical": true,
+      "has_archive": false,
+      "visibility": {
+        "show_in_nav_menus": true,
+        "show_ui": true
+      },
+      "viewable": true,
+      "labels": {
+        "name": "Pagine",
+        "singular_name": "Pagina",
+        "add_new": "Aggiungi",
+        "add_new_item": "Aggiungi pagina",
+        "edit_item": "Modifica pagina",
+        "new_item": "Nuova pagina",
+        "view_item": "Visualizza pagina",
+        "view_items": "Visualizza le pagine",
+        "search_items": "Cerca pagine",
+        "not_found": "Nessun pagina trovata.",
+        "not_found_in_trash": "Nessuna pagina presente nel cestino.",
+        "parent_item_colon": "Pagina genitore:",
+        "all_items": "Tutte le pagine",
+        "archives": "Archivi pagine",
+        "attributes": "Attributi della pagina",
+        "insert_into_item": "Inserisci nella pagina",
+        "uploaded_to_this_item": "Caricato in questa pagina",
+        "featured_image": "Immagine in evidenza",
+        "set_featured_image": "Imposta immagine in evidenza",
+        "remove_featured_image": "Rimuovi immagine in evidenza",
+        "use_featured_image": "Usa come immagine in evidenza",
+        "filter_items_list": "Filtra elenco pagine",
+        "filter_by_date": "Filtra per data",
+        "items_list_navigation": "Navigazione elenco pagine",
+        "items_list": "Elenco delle pagine",
+        "item_published": "Pagina pubblicata.",
+        "item_published_privately": "Pagina pubblicata privatamente.",
+        "item_reverted_to_draft": "Pagina ripristinata come bozza.",
+        "item_trashed": "Pagina spostata nel cestino.",
+        "item_scheduled": "Pagina programmata.",
+        "item_updated": "Pagina aggiornata.",
+        "item_link": "Link pagina",
+        "item_link_description": "Un link ad una pagina.",
+        "menu_name": "Pagine",
+        "name_admin_bar": "Pagina"
+      },
+      "name": "Pagine",
+      "slug": "page",
+      "icon": "dashicons-admin-page",
+      "supports": {
+        "title": true,
+        "editor": [
+          {
+            "notes": true
+          }
+        ],
+        "author": true,
+        "thumbnail": true,
+        "page-attributes": true,
+        "custom-fields": true,
+        "comments": true,
+        "revisions": true,
+        "autosave": true,
+        "excerpt": true,
+        "elementor": true
+      },
+      "taxonomies": [],
+      "rest_base": "pages",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/pages"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "attachment": {
+      "capabilities": {
+        "edit_post": "edit_post",
+        "read_post": "read_post",
+        "delete_post": "delete_post",
+        "edit_posts": "edit_posts",
+        "edit_others_posts": "edit_others_posts",
+        "delete_posts": "delete_posts",
+        "publish_posts": "publish_posts",
+        "read_private_posts": "read_private_posts",
+        "read": "read",
+        "delete_private_posts": "delete_private_posts",
+        "delete_published_posts": "delete_published_posts",
+        "delete_others_posts": "delete_others_posts",
+        "edit_private_posts": "edit_private_posts",
+        "edit_published_posts": "edit_published_posts",
+        "create_posts": "upload_files"
+      },
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "visibility": {
+        "show_in_nav_menus": false,
+        "show_ui": true
+      },
+      "viewable": true,
+      "labels": {
+        "name": "Media",
+        "singular_name": "Media",
+        "add_new": "Aggiungi file media",
+        "add_new_item": "Aggiungi file media",
+        "edit_item": "Modifica media",
+        "new_item": "Nuovo articolo",
+        "view_item": "Visualizza file media",
+        "view_items": "Visualizza gli articoli",
+        "search_items": "Cerca articoli",
+        "not_found": "Nessun articolo trovato.",
+        "not_found_in_trash": "Nessun articolo trovato nel cestino.",
+        "parent_item_colon": null,
+        "all_items": "Media",
+        "archives": "Media",
+        "attributes": "Attributi dell'allegato",
+        "insert_into_item": "Inserisci nell'articolo",
+        "uploaded_to_this_item": "Caricato in questo articolo",
+        "featured_image": "Immagine in evidenza",
+        "set_featured_image": "Imposta immagine in evidenza",
+        "remove_featured_image": "Rimuovi immagine in evidenza",
+        "use_featured_image": "Usa come immagine in evidenza",
+        "filter_items_list": "Filtra elenco articoli",
+        "filter_by_date": "Filtra per data",
+        "items_list_navigation": "Navigazione elenco articoli",
+        "items_list": "Elenco degli articoli",
+        "item_published": "Articolo pubblicato.",
+        "item_published_privately": "Articolo pubblicato privatamente.",
+        "item_reverted_to_draft": "Articolo ripristinato come bozza.",
+        "item_trashed": "Articolo cestinato.",
+        "item_scheduled": "Articolo programmato.",
+        "item_updated": "Articolo aggiornato.",
+        "item_link": "Link articolo",
+        "item_link_description": "Un link a un articolo.",
+        "menu_name": "Media",
+        "name_admin_bar": "Media",
+        "template_name": "Elemento singolo: Media"
+      },
+      "name": "Media",
+      "slug": "attachment",
+      "icon": "dashicons-admin-media",
+      "supports": {
+        "title": true,
+        "author": true,
+        "comments": true
+      },
+      "taxonomies": [],
+      "rest_base": "media",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/media"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "nav_menu_item": {
+      "capabilities": {
+        "edit_post": "edit_post",
+        "read_post": "read_post",
+        "delete_post": "delete_post",
+        "edit_posts": "edit_theme_options",
+        "edit_others_posts": "edit_theme_options",
+        "delete_posts": "edit_theme_options",
+        "publish_posts": "edit_theme_options",
+        "read_private_posts": "edit_theme_options",
+        "read": "read",
+        "delete_private_posts": "edit_theme_options",
+        "delete_published_posts": "edit_theme_options",
+        "delete_others_posts": "edit_theme_options",
+        "edit_private_posts": "edit_theme_options",
+        "edit_published_posts": "edit_theme_options",
+        "create_posts": "edit_theme_options"
+      },
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "visibility": {
+        "show_in_nav_menus": false,
+        "show_ui": false
+      },
+      "viewable": false,
+      "labels": {
+        "name": "Voci del menu di navigazione",
+        "singular_name": "Voce del menu di navigazione",
+        "add_new": "Aggiungi",
+        "add_new_item": "Aggiungi articolo",
+        "edit_item": "Modifica articolo",
+        "new_item": "Nuovo articolo",
+        "view_item": "Visualizza articolo",
+        "view_items": "Visualizza gli articoli",
+        "search_items": "Cerca articoli",
+        "not_found": "Nessun articolo trovato.",
+        "not_found_in_trash": "Nessun articolo trovato nel cestino.",
+        "parent_item_colon": null,
+        "all_items": "Voci del menu di navigazione",
+        "archives": "Voci del menu di navigazione",
+        "attributes": "Attributi dell'articolo",
+        "insert_into_item": "Inserisci nell'articolo",
+        "uploaded_to_this_item": "Caricato in questo articolo",
+        "featured_image": "Immagine in evidenza",
+        "set_featured_image": "Imposta immagine in evidenza",
+        "remove_featured_image": "Rimuovi immagine in evidenza",
+        "use_featured_image": "Usa come immagine in evidenza",
+        "filter_items_list": "Filtra elenco articoli",
+        "filter_by_date": "Filtra per data",
+        "items_list_navigation": "Navigazione elenco articoli",
+        "items_list": "Elenco degli articoli",
+        "item_published": "Articolo pubblicato.",
+        "item_published_privately": "Articolo pubblicato privatamente.",
+        "item_reverted_to_draft": "Articolo ripristinato come bozza.",
+        "item_trashed": "Articolo cestinato.",
+        "item_scheduled": "Articolo programmato.",
+        "item_updated": "Articolo aggiornato.",
+        "item_link": "Link articolo",
+        "item_link_description": "Un link a un articolo.",
+        "menu_name": "Voci del menu di navigazione",
+        "name_admin_bar": "Voce del menu di navigazione",
+        "template_name": "Elemento singolo: Voce del menu di navigazione"
+      },
+      "name": "Voci del menu di navigazione",
+      "slug": "nav_menu_item",
+      "icon": null,
+      "supports": {
+        "title": true,
+        "editor": true,
+        "autosave": true
+      },
+      "taxonomies": [
+        "nav_menu"
+      ],
+      "rest_base": "menu-items",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/menu-items"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "wp_block": {
+      "capabilities": {
+        "edit_post": "edit_block",
+        "read_post": "read_block",
+        "delete_post": "delete_block",
+        "edit_posts": "edit_posts",
+        "edit_others_posts": "edit_others_posts",
+        "delete_posts": "delete_posts",
+        "publish_posts": "publish_blocks",
+        "read_private_posts": "read_private_blocks",
+        "read": "edit_posts",
+        "delete_private_posts": "delete_private_blocks",
+        "delete_published_posts": "delete_published_posts",
+        "delete_others_posts": "delete_others_posts",
+        "edit_private_posts": "edit_private_blocks",
+        "edit_published_posts": "edit_published_posts",
+        "create_posts": "publish_posts"
+      },
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "visibility": {
+        "show_in_nav_menus": false,
+        "show_ui": true
+      },
+      "viewable": false,
+      "labels": {
+        "name": "Pattern",
+        "singular_name": "Pattern",
+        "add_new": "Aggiungi pattern",
+        "add_new_item": "Aggiungi pattern",
+        "edit_item": "Modifica il blocco Pattern",
+        "new_item": "Nuovo pattern",
+        "view_item": "Visualizza pattern",
+        "view_items": "Visualizza i pattern",
+        "search_items": "Cerca pattern",
+        "not_found": "Nessun pattern trovato.",
+        "not_found_in_trash": "Nessun pattern trovato nel cestino.",
+        "parent_item_colon": null,
+        "all_items": "Tutti i pattern",
+        "archives": "Tutti i pattern",
+        "attributes": "Attributi dell'articolo",
+        "insert_into_item": "Inserisci nell'articolo",
+        "uploaded_to_this_item": "Caricato in questo articolo",
+        "featured_image": "Immagine in evidenza",
+        "set_featured_image": "Imposta immagine in evidenza",
+        "remove_featured_image": "Rimuovi immagine in evidenza",
+        "use_featured_image": "Usa come immagine in evidenza",
+        "filter_items_list": "Filtra l'elenco dei pattern",
+        "filter_by_date": "Filtra per data",
+        "items_list_navigation": "Navigazione dell'elenco dei pattern",
+        "items_list": "Elenco dei pattern",
+        "item_published": "Pattern pubblicato.",
+        "item_published_privately": "Pattern pubblicato privatamente.",
+        "item_reverted_to_draft": "Pattern ripristinato come bozza.",
+        "item_trashed": "Articolo cestinato.",
+        "item_scheduled": "Pattern programmato.",
+        "item_updated": "Pattern aggiornato.",
+        "item_link": "Link articolo",
+        "item_link_description": "Un link a un articolo.",
+        "menu_name": "Pattern",
+        "name_admin_bar": "Pattern",
+        "template_name": "Elemento singolo: Pattern"
+      },
+      "name": "Pattern",
+      "slug": "wp_block",
+      "icon": null,
+      "supports": {
+        "title": true,
+        "excerpt": true,
+        "editor": true,
+        "revisions": true,
+        "custom-fields": true,
+        "autosave": true
+      },
+      "taxonomies": [
+        "wp_pattern_category"
+      ],
+      "rest_base": "blocks",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/blocks"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "wp_template": {
+      "capabilities": {
+        "edit_post": "edit_template",
+        "read_post": "read_template",
+        "delete_post": "delete_template",
+        "edit_posts": "edit_theme_options",
+        "edit_others_posts": "edit_theme_options",
+        "delete_posts": "edit_theme_options",
+        "publish_posts": "edit_theme_options",
+        "read_private_posts": "edit_theme_options",
+        "read": "edit_theme_options",
+        "delete_private_posts": "edit_theme_options",
+        "delete_published_posts": "edit_theme_options",
+        "delete_others_posts": "edit_theme_options",
+        "edit_private_posts": "edit_theme_options",
+        "edit_published_posts": "edit_theme_options",
+        "create_posts": "edit_theme_options"
+      },
+      "description": "Template da includere nel tuo tema.",
+      "hierarchical": false,
+      "has_archive": false,
+      "visibility": {
+        "show_in_nav_menus": false,
+        "show_ui": false
+      },
+      "viewable": false,
+      "labels": {
+        "name": "Template",
+        "singular_name": "Template",
+        "add_new": "Aggiungi template",
+        "add_new_item": "Aggiungi template",
+        "edit_item": "Modifica il template",
+        "new_item": "Nuovo template",
+        "view_item": "Visualizza template",
+        "view_items": "Visualizza gli articoli",
+        "search_items": "Ricerca template",
+        "not_found": "Nessun template trovato.",
+        "not_found_in_trash": "Nessun template trovato nel Cestino.",
+        "parent_item_colon": "Template genitore:",
+        "all_items": "Template",
+        "archives": "Archivi template",
+        "attributes": "Attributi dell'articolo",
+        "insert_into_item": "Inserisci nel template",
+        "uploaded_to_this_item": "Caricato in questo template",
+        "featured_image": "Immagine in evidenza",
+        "set_featured_image": "Imposta immagine in evidenza",
+        "remove_featured_image": "Rimuovi immagine in evidenza",
+        "use_featured_image": "Usa come immagine in evidenza",
+        "filter_items_list": "Filtro elenco dei template",
+        "filter_by_date": "Filtra per data",
+        "items_list_navigation": "Navigazione elenco dei template",
+        "items_list": "Elenco dei template",
+        "item_published": "Articolo pubblicato.",
+        "item_published_privately": "Articolo pubblicato privatamente.",
+        "item_reverted_to_draft": "Articolo ripristinato come bozza.",
+        "item_trashed": "Articolo cestinato.",
+        "item_scheduled": "Articolo programmato.",
+        "item_updated": "Template aggiornato.",
+        "item_link": "Link articolo",
+        "item_link_description": "Un link a un articolo.",
+        "menu_name": "Template",
+        "name_admin_bar": "Template",
+        "template_name": "Elemento singolo: Template"
+      },
+      "name": "Template",
+      "slug": "wp_template",
+      "icon": null,
+      "supports": {
+        "title": true,
+        "slug": true,
+        "excerpt": true,
+        "editor": true,
+        "revisions": true,
+        "author": true,
+        "autosave": true
+      },
+      "taxonomies": [],
+      "rest_base": "templates",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/templates"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "wp_template_part": {
+      "capabilities": {
+        "edit_post": "edit_post",
+        "read_post": "read_post",
+        "delete_post": "delete_post",
+        "edit_posts": "edit_theme_options",
+        "edit_others_posts": "edit_theme_options",
+        "delete_posts": "edit_theme_options",
+        "publish_posts": "edit_theme_options",
+        "read_private_posts": "edit_theme_options",
+        "read": "edit_theme_options",
+        "delete_private_posts": "edit_theme_options",
+        "delete_published_posts": "edit_theme_options",
+        "delete_others_posts": "edit_theme_options",
+        "edit_private_posts": "edit_theme_options",
+        "edit_published_posts": "edit_theme_options",
+        "create_posts": "edit_theme_options"
+      },
+      "description": "Parti di template da includere nei tuoi template.",
+      "hierarchical": false,
+      "has_archive": false,
+      "visibility": {
+        "show_in_nav_menus": false,
+        "show_ui": false
+      },
+      "viewable": false,
+      "labels": {
+        "name": "Parti del template",
+        "singular_name": "Parte del template",
+        "add_new": "Aggiungi parte del template",
+        "add_new_item": "Aggiungi parte del template",
+        "edit_item": "Modifica parte del template",
+        "new_item": "Nuova parte del template",
+        "view_item": "Visualizza parte del template",
+        "view_items": "Visualizza gli articoli",
+        "search_items": "Cerca tra le parti di template",
+        "not_found": "Non è stata trovata nessuna parte di template.",
+        "not_found_in_trash": "Non è stata trovata nessuna parte di template nel Cestino.",
+        "parent_item_colon": "Parte di template genitore:",
+        "all_items": "Parti del template",
+        "archives": "Archivi delle parti di template",
+        "attributes": "Attributi dell'articolo",
+        "insert_into_item": "Inserisci nelle parti di template",
+        "uploaded_to_this_item": "Caricato in questa parte di template",
+        "featured_image": "Immagine in evidenza",
+        "set_featured_image": "Imposta immagine in evidenza",
+        "remove_featured_image": "Rimuovi immagine in evidenza",
+        "use_featured_image": "Usa come immagine in evidenza",
+        "filter_items_list": "Filtra l'elenco delle parti di template",
+        "filter_by_date": "Filtra per data",
+        "items_list_navigation": "Navigazione nell'elenco delle parti di template",
+        "items_list": "Elenco delle parti del template",
+        "item_published": "Articolo pubblicato.",
+        "item_published_privately": "Articolo pubblicato privatamente.",
+        "item_reverted_to_draft": "Articolo ripristinato come bozza.",
+        "item_trashed": "Articolo cestinato.",
+        "item_scheduled": "Articolo programmato.",
+        "item_updated": "La parte del template è stata aggiornata.",
+        "item_link": "Link articolo",
+        "item_link_description": "Un link a un articolo.",
+        "menu_name": "Parti del template",
+        "name_admin_bar": "Parte del template",
+        "template_name": "Elemento singolo: Parte del template"
+      },
+      "name": "Parti del template",
+      "slug": "wp_template_part",
+      "icon": null,
+      "supports": {
+        "title": true,
+        "slug": true,
+        "excerpt": true,
+        "editor": true,
+        "revisions": true,
+        "author": true,
+        "autosave": true
+      },
+      "taxonomies": [],
+      "rest_base": "template-parts",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/template-parts"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "wp_global_styles": {
+      "capabilities": {
+        "edit_post": "edit_post",
+        "read_post": "read_post",
+        "delete_post": "delete_post",
+        "edit_posts": "edit_theme_options",
+        "edit_others_posts": "edit_theme_options",
+        "delete_posts": "delete_posts",
+        "publish_posts": "publish_posts",
+        "read_private_posts": "read_private_posts",
+        "read": "edit_posts",
+        "delete_private_posts": "delete_private_posts",
+        "delete_published_posts": "edit_theme_options",
+        "delete_others_posts": "edit_theme_options",
+        "edit_private_posts": "edit_private_posts",
+        "edit_published_posts": "edit_theme_options",
+        "create_posts": "edit_theme_options"
+      },
+      "description": "Stili globali da includere nei temi.",
+      "hierarchical": false,
+      "has_archive": false,
+      "visibility": {
+        "show_in_nav_menus": false,
+        "show_ui": false
+      },
+      "viewable": false,
+      "labels": {
+        "name": "Stili globali",
+        "singular_name": "Stili globali",
+        "add_new": "Aggiungi",
+        "add_new_item": "Aggiungi articolo",
+        "edit_item": "Modifica articolo",
+        "new_item": "Nuovo articolo",
+        "view_item": "Visualizza articolo",
+        "view_items": "Visualizza gli articoli",
+        "search_items": "Cerca articoli",
+        "not_found": "Nessun articolo trovato.",
+        "not_found_in_trash": "Nessun articolo trovato nel cestino.",
+        "parent_item_colon": null,
+        "all_items": "Stili globali",
+        "archives": "Stili globali",
+        "attributes": "Attributi dell'articolo",
+        "insert_into_item": "Inserisci nell'articolo",
+        "uploaded_to_this_item": "Caricato in questo articolo",
+        "featured_image": "Immagine in evidenza",
+        "set_featured_image": "Imposta immagine in evidenza",
+        "remove_featured_image": "Rimuovi immagine in evidenza",
+        "use_featured_image": "Usa come immagine in evidenza",
+        "filter_items_list": "Filtra elenco articoli",
+        "filter_by_date": "Filtra per data",
+        "items_list_navigation": "Navigazione elenco articoli",
+        "items_list": "Elenco degli articoli",
+        "item_published": "Articolo pubblicato.",
+        "item_published_privately": "Articolo pubblicato privatamente.",
+        "item_reverted_to_draft": "Articolo ripristinato come bozza.",
+        "item_trashed": "Articolo cestinato.",
+        "item_scheduled": "Articolo programmato.",
+        "item_updated": "Articolo aggiornato.",
+        "item_link": "Link articolo",
+        "item_link_description": "Un link a un articolo.",
+        "menu_name": "Stili globali",
+        "name_admin_bar": "Stili globali",
+        "template_name": "Elemento singolo: Stili globali"
+      },
+      "name": "Stili globali",
+      "slug": "wp_global_styles",
+      "icon": null,
+      "supports": {
+        "title": true,
+        "editor": true,
+        "revisions": true
+      },
+      "taxonomies": [],
+      "rest_base": "global-styles",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/global-styles"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "wp_navigation": {
+      "capabilities": {
+        "edit_post": "edit_post",
+        "read_post": "read_post",
+        "delete_post": "delete_post",
+        "edit_posts": "edit_theme_options",
+        "edit_others_posts": "edit_theme_options",
+        "delete_posts": "edit_theme_options",
+        "publish_posts": "edit_theme_options",
+        "read_private_posts": "edit_theme_options",
+        "read": "read",
+        "delete_private_posts": "edit_theme_options",
+        "delete_published_posts": "edit_theme_options",
+        "delete_others_posts": "edit_theme_options",
+        "edit_private_posts": "edit_theme_options",
+        "edit_published_posts": "edit_theme_options",
+        "create_posts": "edit_theme_options"
+      },
+      "description": "Menu di navigazione che possono essere inseriti nel tuo sito.",
+      "hierarchical": false,
+      "has_archive": false,
+      "visibility": {
+        "show_in_nav_menus": false,
+        "show_ui": true
+      },
+      "viewable": false,
+      "labels": {
+        "name": "Menu di navigazione",
+        "singular_name": "Menu di navigazione",
+        "add_new": "Aggiungi menu di navigazione",
+        "add_new_item": "Aggiungi menu di navigazione",
+        "edit_item": "Modifica menu di navigazione",
+        "new_item": "Nuovo menu di navigazione",
+        "view_item": "Visualizza menu di navigazione",
+        "view_items": "Visualizza gli articoli",
+        "search_items": "Cerca menu di navigazione",
+        "not_found": "Nessun menu di navigazione trovato.",
+        "not_found_in_trash": "Nessun menu di navigazione trovato nel cestino.",
+        "parent_item_colon": "Menu di navigazione genitore:",
+        "all_items": "Menu di navigazione",
+        "archives": "Archivi menu di navigazione",
+        "attributes": "Attributi dell'articolo",
+        "insert_into_item": "Inserisci nel menu di navigazione",
+        "uploaded_to_this_item": "Caricato su questo Menu di navigazione",
+        "featured_image": "Immagine in evidenza",
+        "set_featured_image": "Imposta immagine in evidenza",
+        "remove_featured_image": "Rimuovi immagine in evidenza",
+        "use_featured_image": "Usa come immagine in evidenza",
+        "filter_items_list": "Filtra l'elenco dei menu di navigazione",
+        "filter_by_date": "Filtra per data",
+        "items_list_navigation": "Navigazione elenco dei menu di navigazione",
+        "items_list": "Elenco dei menu di navigazione",
+        "item_published": "Articolo pubblicato.",
+        "item_published_privately": "Articolo pubblicato privatamente.",
+        "item_reverted_to_draft": "Articolo ripristinato come bozza.",
+        "item_trashed": "Articolo cestinato.",
+        "item_scheduled": "Articolo programmato.",
+        "item_updated": "Menu di navigazione aggiornato.",
+        "item_link": "Link articolo",
+        "item_link_description": "Un link a un articolo.",
+        "menu_name": "Menu di navigazione",
+        "name_admin_bar": "Menu di navigazione",
+        "template_name": "Elemento singolo: Menu di navigazione"
+      },
+      "name": "Menu di navigazione",
+      "slug": "wp_navigation",
+      "icon": null,
+      "supports": {
+        "title": true,
+        "editor": true,
+        "revisions": true,
+        "autosave": true
+      },
+      "taxonomies": [],
+      "rest_base": "navigation",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/navigation"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "wp_font_family": {
+      "capabilities": {
+        "edit_post": "edit_post",
+        "read_post": "read_post",
+        "delete_post": "delete_post",
+        "edit_posts": "edit_theme_options",
+        "edit_others_posts": "edit_theme_options",
+        "delete_posts": "edit_theme_options",
+        "publish_posts": "edit_theme_options",
+        "read_private_posts": "edit_theme_options",
+        "read": "edit_theme_options",
+        "delete_private_posts": "delete_private_posts",
+        "delete_published_posts": "edit_theme_options",
+        "delete_others_posts": "edit_theme_options",
+        "edit_private_posts": "edit_private_posts",
+        "edit_published_posts": "edit_theme_options",
+        "create_posts": "edit_theme_options"
+      },
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "visibility": {
+        "show_in_nav_menus": false,
+        "show_ui": false
+      },
+      "viewable": false,
+      "labels": {
+        "name": "Famiglie di font",
+        "singular_name": "Famiglia di font",
+        "add_new": "Aggiungi",
+        "add_new_item": "Aggiungi articolo",
+        "edit_item": "Modifica articolo",
+        "new_item": "Nuovo articolo",
+        "view_item": "Visualizza articolo",
+        "view_items": "Visualizza gli articoli",
+        "search_items": "Cerca articoli",
+        "not_found": "Nessun articolo trovato.",
+        "not_found_in_trash": "Nessun articolo trovato nel cestino.",
+        "parent_item_colon": null,
+        "all_items": "Famiglie di font",
+        "archives": "Famiglie di font",
+        "attributes": "Attributi dell'articolo",
+        "insert_into_item": "Inserisci nell'articolo",
+        "uploaded_to_this_item": "Caricato in questo articolo",
+        "featured_image": "Immagine in evidenza",
+        "set_featured_image": "Imposta immagine in evidenza",
+        "remove_featured_image": "Rimuovi immagine in evidenza",
+        "use_featured_image": "Usa come immagine in evidenza",
+        "filter_items_list": "Filtra elenco articoli",
+        "filter_by_date": "Filtra per data",
+        "items_list_navigation": "Navigazione elenco articoli",
+        "items_list": "Elenco degli articoli",
+        "item_published": "Articolo pubblicato.",
+        "item_published_privately": "Articolo pubblicato privatamente.",
+        "item_reverted_to_draft": "Articolo ripristinato come bozza.",
+        "item_trashed": "Articolo cestinato.",
+        "item_scheduled": "Articolo programmato.",
+        "item_updated": "Articolo aggiornato.",
+        "item_link": "Link articolo",
+        "item_link_description": "Un link a un articolo.",
+        "menu_name": "Famiglie di font",
+        "name_admin_bar": "Famiglia di font",
+        "template_name": "Elemento singolo: Famiglia di font"
+      },
+      "name": "Famiglie di font",
+      "slug": "wp_font_family",
+      "icon": null,
+      "supports": {
+        "title": true
+      },
+      "taxonomies": [],
+      "rest_base": "font-families",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/font-families"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "wp_font_face": {
+      "capabilities": {
+        "edit_post": "edit_post",
+        "read_post": "read_post",
+        "delete_post": "delete_post",
+        "edit_posts": "edit_theme_options",
+        "edit_others_posts": "edit_theme_options",
+        "delete_posts": "edit_theme_options",
+        "publish_posts": "edit_theme_options",
+        "read_private_posts": "edit_theme_options",
+        "read": "edit_theme_options",
+        "delete_private_posts": "delete_private_posts",
+        "delete_published_posts": "edit_theme_options",
+        "delete_others_posts": "edit_theme_options",
+        "edit_private_posts": "edit_private_posts",
+        "edit_published_posts": "edit_theme_options",
+        "create_posts": "edit_theme_options"
+      },
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "visibility": {
+        "show_in_nav_menus": false,
+        "show_ui": false
+      },
+      "viewable": false,
+      "labels": {
+        "name": "Font",
+        "singular_name": "Font",
+        "add_new": "Aggiungi",
+        "add_new_item": "Aggiungi articolo",
+        "edit_item": "Modifica articolo",
+        "new_item": "Nuovo articolo",
+        "view_item": "Visualizza articolo",
+        "view_items": "Visualizza gli articoli",
+        "search_items": "Cerca articoli",
+        "not_found": "Nessun articolo trovato.",
+        "not_found_in_trash": "Nessun articolo trovato nel cestino.",
+        "parent_item_colon": null,
+        "all_items": "Font",
+        "archives": "Font",
+        "attributes": "Attributi dell'articolo",
+        "insert_into_item": "Inserisci nell'articolo",
+        "uploaded_to_this_item": "Caricato in questo articolo",
+        "featured_image": "Immagine in evidenza",
+        "set_featured_image": "Imposta immagine in evidenza",
+        "remove_featured_image": "Rimuovi immagine in evidenza",
+        "use_featured_image": "Usa come immagine in evidenza",
+        "filter_items_list": "Filtra elenco articoli",
+        "filter_by_date": "Filtra per data",
+        "items_list_navigation": "Navigazione elenco articoli",
+        "items_list": "Elenco degli articoli",
+        "item_published": "Articolo pubblicato.",
+        "item_published_privately": "Articolo pubblicato privatamente.",
+        "item_reverted_to_draft": "Articolo ripristinato come bozza.",
+        "item_trashed": "Articolo cestinato.",
+        "item_scheduled": "Articolo programmato.",
+        "item_updated": "Articolo aggiornato.",
+        "item_link": "Link articolo",
+        "item_link_description": "Un link a un articolo.",
+        "menu_name": "Font",
+        "name_admin_bar": "Font",
+        "template_name": "Elemento singolo: Font"
+      },
+      "name": "Font",
+      "slug": "wp_font_face",
+      "icon": null,
+      "supports": {
+        "title": true
+      },
+      "taxonomies": [],
+      "rest_base": "font-families/(?P<font_family_id>[\\d]+)/font-faces",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/font-families/(?P<font_family_id>[\\d]+)/font-faces"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "e-floating-buttons": {
+      "capabilities": {
+        "edit_post": "manage_options",
+        "read_post": "manage_options",
+        "delete_post": "manage_options",
+        "edit_posts": "manage_options",
+        "edit_others_posts": "manage_options",
+        "delete_posts": "delete_posts",
+        "publish_posts": "manage_options",
+        "read_private_posts": "manage_options",
+        "create_posts": "manage_options"
+      },
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "visibility": {
+        "show_in_nav_menus": false,
+        "show_ui": true
+      },
+      "viewable": true,
+      "labels": {
+        "name": "Elementi fluttuanti",
+        "singular_name": "Elemento fluttuante",
+        "add_new": "Aggiungi nuovo",
+        "add_new_item": "Aggiungi nuovo Elemento fluttuante",
+        "edit_item": "Modifica Elemento fluttuante",
+        "new_item": "Nuovo Elemento fluttuante",
+        "view_item": "Visualizza Elemento fluttuante",
+        "view_items": "Visualizza gli articoli",
+        "search_items": "Cerca Elementi fluttuanti",
+        "not_found": "Nessun elementi fluttuanti trovato.",
+        "not_found_in_trash": "Nessun elementi fluttuanti trovato nel cestino.",
+        "parent_item_colon": "",
+        "all_items": "Tutti Elementi fluttuanti",
+        "archives": "Tutti Elementi fluttuanti",
+        "attributes": "Attributi dell'articolo",
+        "insert_into_item": "Inserisci nell'articolo",
+        "uploaded_to_this_item": "Caricato in questo articolo",
+        "featured_image": "Immagine in evidenza",
+        "set_featured_image": "Imposta immagine in evidenza",
+        "remove_featured_image": "Rimuovi immagine in evidenza",
+        "use_featured_image": "Usa come immagine in evidenza",
+        "filter_items_list": "Filtra elenco articoli",
+        "filter_by_date": "Filtra per data",
+        "items_list_navigation": "Navigazione elenco articoli",
+        "items_list": "Elenco degli articoli",
+        "item_published": "Articolo pubblicato.",
+        "item_published_privately": "Articolo pubblicato privatamente.",
+        "item_reverted_to_draft": "Articolo ripristinato come bozza.",
+        "item_trashed": "Articolo cestinato.",
+        "item_scheduled": "Articolo programmato.",
+        "item_updated": "Articolo aggiornato.",
+        "item_link": "Link articolo",
+        "item_link_description": "Un link a un articolo.",
+        "menu_name": "Elementi fluttuanti",
+        "name_admin_bar": "Elemento fluttuante",
+        "template_name": "Elemento singolo: Elemento fluttuante"
+      },
+      "name": "Elementi fluttuanti",
+      "slug": "e-floating-buttons",
+      "icon": null,
+      "supports": {
+        "title": true,
+        "editor": true,
+        "comments": true,
+        "revisions": true,
+        "trackbacks": true,
+        "author": true,
+        "excerpt": true,
+        "page-attributes": true,
+        "thumbnail": true,
+        "custom-fields": true,
+        "post-formats": true,
+        "elementor": true,
+        "autosave": true
+      },
+      "taxonomies": [],
+      "rest_base": "e-floating-buttons",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/e-floating-buttons"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "elementor_library": {
+      "capabilities": {
+        "edit_post": "edit_post",
+        "read_post": "read_post",
+        "delete_post": "delete_post",
+        "edit_posts": "edit_posts",
+        "edit_others_posts": "edit_others_posts",
+        "delete_posts": "delete_posts",
+        "publish_posts": "publish_posts",
+        "read_private_posts": "read_private_posts",
+        "read": "read",
+        "delete_private_posts": "delete_private_posts",
+        "delete_published_posts": "delete_published_posts",
+        "delete_others_posts": "delete_others_posts",
+        "edit_private_posts": "edit_private_posts",
+        "edit_published_posts": "edit_published_posts",
+        "create_posts": "edit_posts"
+      },
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "visibility": {
+        "show_in_nav_menus": false,
+        "show_ui": true
+      },
+      "viewable": true,
+      "labels": {
+        "name": "I miei template",
+        "singular_name": "Template",
+        "add_new": "Aggiungi nuovo template",
+        "add_new_item": "Aggiungi nuovo template",
+        "edit_item": "Modifica il template",
+        "new_item": "Nuovo template",
+        "view_item": "Visualizza template",
+        "view_items": "Visualizza gli articoli",
+        "search_items": "Cerca template",
+        "not_found": "Nessun template trovato",
+        "not_found_in_trash": "Nessun template trovato nel cestino",
+        "parent_item_colon": "Template genitore:",
+        "all_items": "Tutti i template",
+        "archives": "Tutti i template",
+        "attributes": "Attributi dell'articolo",
+        "insert_into_item": "Inserisci nell'articolo",
+        "uploaded_to_this_item": "Caricato in questo articolo",
+        "featured_image": "Immagine in evidenza",
+        "set_featured_image": "Imposta immagine in evidenza",
+        "remove_featured_image": "Rimuovi immagine in evidenza",
+        "use_featured_image": "Usa come immagine in evidenza",
+        "filter_items_list": "Filtra elenco articoli",
+        "filter_by_date": "Filtra per data",
+        "items_list_navigation": "Navigazione elenco articoli",
+        "items_list": "Elenco degli articoli",
+        "item_published": "Articolo pubblicato.",
+        "item_published_privately": "Articolo pubblicato privatamente.",
+        "item_reverted_to_draft": "Articolo ripristinato come bozza.",
+        "item_trashed": "Articolo cestinato.",
+        "item_scheduled": "Articolo programmato.",
+        "item_updated": "Articolo aggiornato.",
+        "item_link": "Link articolo",
+        "item_link_description": "Un link a un articolo.",
+        "menu_name": "Template",
+        "name_admin_bar": "Template",
+        "template_name": "Elemento singolo: Template"
+      },
+      "name": "I miei template",
+      "slug": "elementor_library",
+      "icon": "dashicons-admin-page",
+      "supports": {
+        "title": true,
+        "thumbnail": true,
+        "author": true,
+        "elementor": true,
+        "custom-fields": true,
+        "revisions": true
+      },
+      "taxonomies": [],
+      "rest_base": "elementor_library",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/elementor_library"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "elementor_snippet": {
+      "capabilities": {
+        "edit_post": "manage_options",
+        "read_post": "manage_options",
+        "delete_post": "manage_options",
+        "edit_posts": "manage_options",
+        "edit_others_posts": "manage_options",
+        "delete_posts": "manage_options",
+        "publish_posts": "manage_options",
+        "read_private_posts": "manage_options",
+        "delete_others_posts": "manage_options",
+        "create_posts": "manage_options"
+      },
+      "description": "",
+      "hierarchical": false,
+      "has_archive": false,
+      "visibility": {
+        "show_in_nav_menus": false,
+        "show_ui": true
+      },
+      "viewable": false,
+      "labels": {
+        "name": "Custom Code",
+        "singular_name": "Custom Code",
+        "add_new": "Add new",
+        "add_new_item": "New code",
+        "edit_item": "Edit code",
+        "new_item": "Nuovo articolo",
+        "view_item": "Visualizza articolo",
+        "view_items": "Visualizza gli articoli",
+        "search_items": "Cerca articoli",
+        "not_found": "Nessun articolo trovato.",
+        "not_found_in_trash": "Nessun articolo trovato nel cestino.",
+        "parent_item_colon": null,
+        "all_items": "Custom Code",
+        "archives": "Custom Code",
+        "attributes": "Attributi dell'articolo",
+        "insert_into_item": "Inserisci nell'articolo",
+        "uploaded_to_this_item": "Caricato in questo articolo",
+        "featured_image": "Immagine in evidenza",
+        "set_featured_image": "Imposta immagine in evidenza",
+        "remove_featured_image": "Rimuovi immagine in evidenza",
+        "use_featured_image": "Usa come immagine in evidenza",
+        "filter_items_list": "Filtra elenco articoli",
+        "filter_by_date": "Filtra per data",
+        "items_list_navigation": "Navigazione elenco articoli",
+        "items_list": "Elenco degli articoli",
+        "item_published": "Articolo pubblicato.",
+        "item_published_privately": "Articolo pubblicato privatamente.",
+        "item_reverted_to_draft": "Articolo ripristinato come bozza.",
+        "item_trashed": "Articolo cestinato.",
+        "item_scheduled": "Articolo programmato.",
+        "item_updated": "Articolo aggiornato.",
+        "item_link": "Link articolo",
+        "item_link_description": "Un link a un articolo.",
+        "menu_name": "Custom Code",
+        "name_admin_bar": "Custom Code",
+        "template_name": "Elemento singolo: Custom Code"
+      },
+      "name": "Custom Code",
+      "slug": "elementor_snippet",
+      "icon": null,
+      "supports": {
+        "title": true,
+        "author": true,
+        "custom-fields": true
+      },
+      "taxonomies": [],
+      "rest_base": "elementor_snippet",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/elementor_snippet"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    },
+    "metform-entry": {
+      "capabilities": {
+        "edit_post": "edit_page",
+        "read_post": "read_page",
+        "delete_post": "delete_page",
+        "edit_posts": "edit_pages",
+        "edit_others_posts": "edit_others_pages",
+        "delete_posts": "delete_pages",
+        "publish_posts": "publish_pages",
+        "read_private_posts": "read_private_pages",
+        "read": "read",
+        "delete_private_posts": "delete_private_pages",
+        "delete_published_posts": "delete_published_pages",
+        "delete_others_posts": "delete_others_pages",
+        "edit_private_posts": "edit_private_pages",
+        "edit_published_posts": "edit_published_pages",
+        "create_posts": "do_not_allow"
+      },
+      "description": "metform-entry",
+      "hierarchical": false,
+      "has_archive": false,
+      "visibility": {
+        "show_in_nav_menus": false,
+        "show_ui": true
+      },
+      "viewable": false,
+      "labels": {
+        "name": "Entries",
+        "singular_name": "Entry",
+        "add_new": "Add New",
+        "add_new_item": "Add New Item",
+        "edit_item": "Edit Item",
+        "new_item": "New Item",
+        "view_item": "View Item",
+        "view_items": "View Items",
+        "search_items": "Search Item",
+        "not_found": "Not found",
+        "not_found_in_trash": "Not found in Trash",
+        "parent_item_colon": "Parent Item:",
+        "all_items": "Entries",
+        "archives": "Entry Archives",
+        "attributes": "Entry Attributes",
+        "insert_into_item": "Insert into item",
+        "uploaded_to_this_item": "Uploaded to this item",
+        "featured_image": "Featured Image",
+        "set_featured_image": "Set featured image",
+        "remove_featured_image": "Remove featured image",
+        "use_featured_image": "Use as featured image",
+        "filter_items_list": "Filter from entry list",
+        "filter_by_date": "Filtra per data",
+        "items_list_navigation": "Form entries list navigation",
+        "items_list": "Form entries list",
+        "item_published": "Articolo pubblicato.",
+        "item_published_privately": "Articolo pubblicato privatamente.",
+        "item_reverted_to_draft": "Articolo ripristinato come bozza.",
+        "item_trashed": "Articolo cestinato.",
+        "item_scheduled": "Articolo programmato.",
+        "item_updated": "Articolo aggiornato.",
+        "item_link": "Link articolo",
+        "item_link_description": "Un link a un articolo.",
+        "menu_name": "Entry",
+        "name_admin_bar": "Entry",
+        "update_item": "Update Item",
+        "template_name": "Elemento singolo: Entry"
+      },
+      "name": "Entries",
+      "slug": "metform-entry",
+      "icon": "dashicons-format-aside",
+      "supports": {
+        "title": true
+      },
+      "taxonomies": [],
+      "rest_base": "metform-entry",
+      "rest_namespace": "wp/v2",
+      "template": [],
+      "template_lock": false,
+      "_links": {
+        "collection": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/types"
+          }
+        ],
+        "wp:items": [
+          {
+            "href": "https://actinglab.it/wp-json/wp/v2/metform-entry"
+          }
+        ],
+        "curies": [
+          {
+            "name": "wp",
+            "href": "https://api.w.org/{rel}",
+            "templated": true
+          }
+        ]
+      }
+    }
+  }
+}
