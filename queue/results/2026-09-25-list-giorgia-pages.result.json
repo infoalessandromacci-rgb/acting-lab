@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "processed_at": "2026-09-25T16:52:02.154381+00:00",
+  "source": "2026-09-25-list-giorgia-pages.json",
+  "command": {
+    "action": "list_pages",
+    "search": "Giorgia Mangiafesta",
+    "per_page": 20
+  },
+  "result": {
+    "pages": [
+      {
+        "id": 199,
+        "title": "Giorgia Mangiafesta",
+        "slug": "giorgia-mangiafesta-2",
+        "status": "draft",
+        "modified_gmt": "0000-00-00 00:00:00",
+        "elementor": true,
+        "url": "https://actinglab.it/?page_id=199"
+      },
+      {
+        "id": 7,
+        "title": "homepage",
+        "slug": "homepage",
+        "status": "publish",
+        "modified_gmt": "2026-09-25 16:26:04",
+        "elementor": true,
+        "url": "https://actinglab.it/homepage/"
+      }
+    ]
+  }
+}
