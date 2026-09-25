@@ -1,0 +1,87 @@
+{
+  "ok": true,
+  "processed_at": "2026-09-25T16:13:11.363628+00:00",
+  "source": "2026-09-25-clean-divider-placeholder-v2.json",
+  "command": {
+    "action": "replace_text_batch",
+    "page_id": 7,
+    "dry_run": false,
+    "replacements": [
+      {
+        "widget_id": "15a1b0b9",
+        "path": [
+          "text"
+        ],
+        "old_text": "Divider",
+        "new_text": "—"
+      },
+      {
+        "widget_id": "88978d2",
+        "path": [
+          "text"
+        ],
+        "old_text": "Divider",
+        "new_text": "—"
+      },
+      {
+        "widget_id": "e5a5a2b",
+        "path": [
+          "text"
+        ],
+        "old_text": "Divider",
+        "new_text": "—"
+      }
+    ]
+  },
+  "result": {
+    "page_id": 7,
+    "dry_run": false,
+    "total": 3,
+    "successful": 3,
+    "failed": 0,
+    "results": [
+      {
+        "index": 1,
+        "ok": true,
+        "result": {
+          "ok": true,
+          "page_id": 7,
+          "widget_id": "15a1b0b9",
+          "path": [
+            "text"
+          ],
+          "replacement_count": 1,
+          "modified_gmt": "2026-09-25 16:13:12"
+        }
+      },
+      {
+        "index": 2,
+        "ok": true,
+        "result": {
+          "ok": true,
+          "page_id": 7,
+          "widget_id": "88978d2",
+          "path": [
+            "text"
+          ],
+          "replacement_count": 1,
+          "modified_gmt": "2026-09-25 16:13:14"
+        }
+      },
+      {
+        "index": 3,
+        "ok": true,
+        "result": {
+          "ok": true,
+          "page_id": 7,
+          "widget_id": "e5a5a2b",
+          "path": [
+            "text"
+          ],
+          "replacement_count": 1,
+          "modified_gmt": "2026-09-25 16:13:16"
+        }
+      }
+    ]
+  }
+}
