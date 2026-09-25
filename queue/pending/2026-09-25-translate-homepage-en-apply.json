@@ -1,0 +1,103 @@
+{
+  "action": "replace_text_batch",
+  "page_id": 7,
+  "dry_run": false,
+  "replacements": [
+    {
+      "widget_id": "44d15e4",
+      "path": ["title"],
+      "old_text": "We provide brilliant idea to grow the startup — agency with your sharp brand.",
+      "new_text": "Acting Lab è uno spazio di formazione dove tecnica, creatività e presenza scenica crescono insieme."
+    },
+    {
+      "widget_id": "1d3d2e1",
+      "path": ["title"],
+      "old_text": "We solve your brand to grow the startup —",
+      "new_text": "Scegli il percorso più adatto a te e porta il tuo lavoro sulla scena."
+    },
+    {
+      "widget_id": "6ddf6d8e",
+      "path": ["title"],
+      "old_text": "Work",
+      "new_text": "Il metodo"
+    },
+    {
+      "widget_id": "a28ff99",
+      "path": ["title"],
+      "old_text": "We provide brilliant idea\nto grow the startup — agency with your sharp brand.",
+      "new_text": "Imparare facendo: tecnica, ascolto e pratica scenica\nguidati da professionisti del settore."
+    },
+    {
+      "widget_id": "653ec14",
+      "path": ["form_fields", 0, "field_label"],
+      "old_text": "Name",
+      "new_text": "Nome"
+    },
+    {
+      "widget_id": "653ec14",
+      "path": ["form_fields", 0, "placeholder"],
+      "old_text": "Name",
+      "new_text": "Nome"
+    },
+    {
+      "widget_id": "653ec14",
+      "path": ["form_fields", 2, "field_label"],
+      "old_text": "Message",
+      "new_text": "Messaggio"
+    },
+    {
+      "widget_id": "653ec14",
+      "path": ["form_fields", 2, "placeholder"],
+      "old_text": "Message",
+      "new_text": "Messaggio"
+    },
+    {
+      "widget_id": "653ec14",
+      "path": ["step_next_label"],
+      "old_text": "Next",
+      "new_text": "Avanti"
+    },
+    {
+      "widget_id": "653ec14",
+      "path": ["step_previous_label"],
+      "old_text": "Previous",
+      "new_text": "Indietro"
+    },
+    {
+      "widget_id": "653ec14",
+      "path": ["button_text"],
+      "old_text": "Send",
+      "new_text": "Invia"
+    },
+    {
+      "widget_id": "653ec14",
+      "path": ["success_message"],
+      "old_text": "Your submission was successful.",
+      "new_text": "Messaggio inviato con successo."
+    },
+    {
+      "widget_id": "653ec14",
+      "path": ["error_message"],
+      "old_text": "Your submission failed because of an error.",
+      "new_text": "Si è verificato un errore durante l'invio. Riprova."
+    },
+    {
+      "widget_id": "653ec14",
+      "path": ["server_message"],
+      "old_text": "Your submission failed because of a server error.",
+      "new_text": "Errore del server durante l'invio. Riprova tra poco."
+    },
+    {
+      "widget_id": "653ec14",
+      "path": ["invalid_message"],
+      "old_text": "Your submission failed because the form is invalid.",
+      "new_text": "Controlla i campi del modulo e riprova."
+    },
+    {
+      "widget_id": "653ec14",
+      "path": ["required_field_message"],
+      "old_text": "This field is required.",
+      "new_text": "Questo campo è obbligatorio."
+    }
+  ]
+}
