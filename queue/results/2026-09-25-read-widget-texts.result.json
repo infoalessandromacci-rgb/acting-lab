@@ -1,0 +1,1581 @@
+{
+  "ok": true,
+  "processed_at": "2026-09-25T16:06:11.513390+00:00",
+  "source": "2026-09-25-read-widget-texts.json",
+  "command": {
+    "action": "read_widget_texts",
+    "page_id": 7
+  },
+  "result": {
+    "id": 7,
+    "title": "homepage",
+    "url": "https://actinglab.it/homepage/",
+    "count": 152,
+    "text_fields": [
+      {
+        "widget_id": "de313b6",
+        "el_type": "widget",
+        "widget_type": "heading",
+        "path": [
+          "title"
+        ],
+        "value": "Scuola di recitazione a Roma",
+        "text": "Scuola di recitazione a Roma"
+      },
+      {
+        "widget_id": "962283f",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_text"
+        ],
+        "value": "4 Percorsi: laboratorio, lezioni private, team building, seminari",
+        "text": "4 Percorsi: laboratorio, lezioni private, team building, seminari"
+      },
+      {
+        "widget_id": "962283f",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "text_align"
+        ],
+        "value": "left",
+        "text": "left"
+      },
+      {
+        "widget_id": "962283f",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "description_color"
+        ],
+        "value": "globals/colors?id=primary",
+        "text": "globals/colors?id=primary"
+      },
+      {
+        "widget_id": "962283f",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "description_typography_typography"
+        ],
+        "value": "globals/typography?id=text",
+        "text": "globals/typography?id=text"
+      },
+      {
+        "widget_id": "10ce863",
+        "el_type": "widget",
+        "widget_type": "button",
+        "path": [
+          "text"
+        ],
+        "value": "Contattaci ",
+        "text": "Contattaci"
+      },
+      {
+        "widget_id": "44d15e4",
+        "el_type": "widget",
+        "widget_type": "heading",
+        "path": [
+          "title"
+        ],
+        "value": "We provide brilliant idea to grow the startup — agency with your sharp brand.",
+        "text": "We provide brilliant idea to grow the startup — agency with your sharp brand."
+      },
+      {
+        "widget_id": "a2e2236",
+        "el_type": "widget",
+        "widget_type": "heading",
+        "path": [
+          "title"
+        ],
+        "value": "15+",
+        "text": "15+"
+      },
+      {
+        "widget_id": "4833012",
+        "el_type": "widget",
+        "widget_type": "heading",
+        "path": [
+          "title"
+        ],
+        "value": "3",
+        "text": "3"
+      },
+      {
+        "widget_id": "1d3d2e1",
+        "el_type": "widget",
+        "widget_type": "heading",
+        "path": [
+          "title"
+        ],
+        "value": "We solve your brand to grow the startup —",
+        "text": "We solve your brand to grow the startup —"
+      },
+      {
+        "widget_id": "b40ea95",
+        "el_type": "widget",
+        "widget_type": "button",
+        "path": [
+          "text"
+        ],
+        "value": "Fai clic qui",
+        "text": "Fai clic qui"
+      },
+      {
+        "widget_id": "464f9499",
+        "el_type": "widget",
+        "widget_type": "heading",
+        "path": [
+          "title"
+        ],
+        "value": "01.",
+        "text": "01."
+      },
+      {
+        "widget_id": "464f9499",
+        "el_type": "widget",
+        "widget_type": "heading",
+        "path": [
+          "__globals__",
+          "title_color"
+        ],
+        "value": "globals/colors?id=ace9779",
+        "text": "globals/colors?id=ace9779"
+      },
+      {
+        "widget_id": "79f0a201",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_text"
+        ],
+        "value": "Corso di Recitazione Annuale a Roma",
+        "text": "Corso di Recitazione Annuale a Roma"
+      },
+      {
+        "widget_id": "79f0a201",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_text"
+        ],
+        "value": "Un laboratorio settimanale da ottobre a maggio, tra training attoriale e lavoro scenico, con saggio finale aperto al pubblico.",
+        "text": "Un laboratorio settimanale da ottobre a maggio, tra training attoriale e lavoro scenico, con saggio finale aperto al pubblico."
+      },
+      {
+        "widget_id": "79f0a201",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_size"
+        ],
+        "value": "div",
+        "text": "div"
+      },
+      {
+        "widget_id": "79f0a201",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "content_vertical_alignment"
+        ],
+        "value": "middle",
+        "text": "middle"
+      },
+      {
+        "widget_id": "79f0a201",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "text_align"
+        ],
+        "value": "left",
+        "text": "left"
+      },
+      {
+        "widget_id": "79f0a201",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "title_color"
+        ],
+        "value": "globals/colors?id=ace9779",
+        "text": "globals/colors?id=ace9779"
+      },
+      {
+        "widget_id": "79f0a201",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "description_typography_typography"
+        ],
+        "value": "globals/typography?id=text",
+        "text": "globals/typography?id=text"
+      },
+      {
+        "widget_id": "79f0a201",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_typography_typography"
+        ],
+        "value": "custom",
+        "text": "custom"
+      },
+      {
+        "widget_id": "79f0a201",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_typography_font_family"
+        ],
+        "value": "Plus Jakarta Sans",
+        "text": "Plus Jakarta Sans"
+      },
+      {
+        "widget_id": "79f0a201",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_typography_font_weight"
+        ],
+        "value": "600",
+        "text": "600"
+      },
+      {
+        "widget_id": "79f0a201",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_typography_text_transform"
+        ],
+        "value": "capitalize",
+        "text": "capitalize"
+      },
+      {
+        "widget_id": "79f0a201",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_typography_font_style"
+        ],
+        "value": "normal",
+        "text": "normal"
+      },
+      {
+        "widget_id": "79f0a201",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_typography_text_decoration"
+        ],
+        "value": "none",
+        "text": "none"
+      },
+      {
+        "widget_id": "79f0a201",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_color"
+        ],
+        "value": "#FFFFFF",
+        "text": "#FFFFFF"
+      },
+      {
+        "widget_id": "79f0a201",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_typography_typography"
+        ],
+        "value": "custom",
+        "text": "custom"
+      },
+      {
+        "widget_id": "79f0a201",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_typography_font_family"
+        ],
+        "value": "Inter",
+        "text": "Inter"
+      },
+      {
+        "widget_id": "79f0a201",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_typography_font_weight"
+        ],
+        "value": "500",
+        "text": "500"
+      },
+      {
+        "widget_id": "79f0a201",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_typography_text_transform"
+        ],
+        "value": "none",
+        "text": "none"
+      },
+      {
+        "widget_id": "79f0a201",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_typography_font_style"
+        ],
+        "value": "normal",
+        "text": "normal"
+      },
+      {
+        "widget_id": "79f0a201",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_typography_text_decoration"
+        ],
+        "value": "none",
+        "text": "none"
+      },
+      {
+        "widget_id": "79f0a201",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_color"
+        ],
+        "value": "#FFFFFF",
+        "text": "#FFFFFF"
+      },
+      {
+        "widget_id": "3341aa76",
+        "el_type": "widget",
+        "widget_type": "heading",
+        "path": [
+          "title"
+        ],
+        "value": "02.",
+        "text": "02."
+      },
+      {
+        "widget_id": "3341aa76",
+        "el_type": "widget",
+        "widget_type": "heading",
+        "path": [
+          "__globals__",
+          "title_color"
+        ],
+        "value": "globals/colors?id=ace9779",
+        "text": "globals/colors?id=ace9779"
+      },
+      {
+        "widget_id": "32698cdf",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_text"
+        ],
+        "value": "Lezioni Private di Recitazione",
+        "text": "Lezioni Private di Recitazione"
+      },
+      {
+        "widget_id": "32698cdf",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_text"
+        ],
+        "value": "Recitazione, public speaking, preparazione provini e self tape: lezioni individuali su misura per attori, manager e studenti.",
+        "text": "Recitazione, public speaking, preparazione provini e self tape: lezioni individuali su misura per attori, manager e studenti."
+      },
+      {
+        "widget_id": "32698cdf",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_size"
+        ],
+        "value": "div",
+        "text": "div"
+      },
+      {
+        "widget_id": "32698cdf",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "content_vertical_alignment"
+        ],
+        "value": "middle",
+        "text": "middle"
+      },
+      {
+        "widget_id": "32698cdf",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "text_align"
+        ],
+        "value": "left",
+        "text": "left"
+      },
+      {
+        "widget_id": "32698cdf",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "title_color"
+        ],
+        "value": "globals/colors?id=ace9779",
+        "text": "globals/colors?id=ace9779"
+      },
+      {
+        "widget_id": "32698cdf",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "description_typography_typography"
+        ],
+        "value": "globals/typography?id=text",
+        "text": "globals/typography?id=text"
+      },
+      {
+        "widget_id": "32698cdf",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_typography_typography"
+        ],
+        "value": "custom",
+        "text": "custom"
+      },
+      {
+        "widget_id": "32698cdf",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_typography_font_family"
+        ],
+        "value": "Plus Jakarta Sans",
+        "text": "Plus Jakarta Sans"
+      },
+      {
+        "widget_id": "32698cdf",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_typography_font_weight"
+        ],
+        "value": "600",
+        "text": "600"
+      },
+      {
+        "widget_id": "32698cdf",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_typography_text_transform"
+        ],
+        "value": "capitalize",
+        "text": "capitalize"
+      },
+      {
+        "widget_id": "32698cdf",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_typography_font_style"
+        ],
+        "value": "normal",
+        "text": "normal"
+      },
+      {
+        "widget_id": "32698cdf",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_typography_text_decoration"
+        ],
+        "value": "none",
+        "text": "none"
+      },
+      {
+        "widget_id": "32698cdf",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_color"
+        ],
+        "value": "#FFFFFF",
+        "text": "#FFFFFF"
+      },
+      {
+        "widget_id": "32698cdf",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_typography_typography"
+        ],
+        "value": "custom",
+        "text": "custom"
+      },
+      {
+        "widget_id": "32698cdf",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_typography_font_family"
+        ],
+        "value": "Inter",
+        "text": "Inter"
+      },
+      {
+        "widget_id": "32698cdf",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_typography_font_weight"
+        ],
+        "value": "500",
+        "text": "500"
+      },
+      {
+        "widget_id": "32698cdf",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_typography_text_transform"
+        ],
+        "value": "none",
+        "text": "none"
+      },
+      {
+        "widget_id": "32698cdf",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_typography_font_style"
+        ],
+        "value": "normal",
+        "text": "normal"
+      },
+      {
+        "widget_id": "32698cdf",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_typography_text_decoration"
+        ],
+        "value": "none",
+        "text": "none"
+      },
+      {
+        "widget_id": "32698cdf",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_color"
+        ],
+        "value": "#FFFFFF",
+        "text": "#FFFFFF"
+      },
+      {
+        "widget_id": "64ce77aa",
+        "el_type": "widget",
+        "widget_type": "heading",
+        "path": [
+          "title"
+        ],
+        "value": "03.",
+        "text": "03."
+      },
+      {
+        "widget_id": "64ce77aa",
+        "el_type": "widget",
+        "widget_type": "heading",
+        "path": [
+          "__globals__",
+          "title_color"
+        ],
+        "value": "globals/colors?id=ace9779",
+        "text": "globals/colors?id=ace9779"
+      },
+      {
+        "widget_id": "3d565ede",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_text"
+        ],
+        "value": "Team Building Teatrale per Aziende",
+        "text": "Team Building Teatrale per Aziende"
+      },
+      {
+        "widget_id": "3d565ede",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_text"
+        ],
+        "value": "Il teatro come strumento esperienziale per la tua azienda a Roma: comunicazione, coesione e fiducia nel team.",
+        "text": "Il teatro come strumento esperienziale per la tua azienda a Roma: comunicazione, coesione e fiducia nel team."
+      },
+      {
+        "widget_id": "3d565ede",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_size"
+        ],
+        "value": "div",
+        "text": "div"
+      },
+      {
+        "widget_id": "3d565ede",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "content_vertical_alignment"
+        ],
+        "value": "middle",
+        "text": "middle"
+      },
+      {
+        "widget_id": "3d565ede",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "text_align"
+        ],
+        "value": "left",
+        "text": "left"
+      },
+      {
+        "widget_id": "3d565ede",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "title_color"
+        ],
+        "value": "globals/colors?id=ace9779",
+        "text": "globals/colors?id=ace9779"
+      },
+      {
+        "widget_id": "3d565ede",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "description_typography_typography"
+        ],
+        "value": "globals/typography?id=text",
+        "text": "globals/typography?id=text"
+      },
+      {
+        "widget_id": "3d565ede",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_typography_typography"
+        ],
+        "value": "custom",
+        "text": "custom"
+      },
+      {
+        "widget_id": "3d565ede",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_typography_font_family"
+        ],
+        "value": "Plus Jakarta Sans",
+        "text": "Plus Jakarta Sans"
+      },
+      {
+        "widget_id": "3d565ede",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_typography_font_weight"
+        ],
+        "value": "600",
+        "text": "600"
+      },
+      {
+        "widget_id": "3d565ede",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_typography_text_transform"
+        ],
+        "value": "capitalize",
+        "text": "capitalize"
+      },
+      {
+        "widget_id": "3d565ede",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_typography_font_style"
+        ],
+        "value": "normal",
+        "text": "normal"
+      },
+      {
+        "widget_id": "3d565ede",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_typography_text_decoration"
+        ],
+        "value": "none",
+        "text": "none"
+      },
+      {
+        "widget_id": "3d565ede",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_color"
+        ],
+        "value": "#FFFFFF",
+        "text": "#FFFFFF"
+      },
+      {
+        "widget_id": "3d565ede",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_typography_typography"
+        ],
+        "value": "custom",
+        "text": "custom"
+      },
+      {
+        "widget_id": "3d565ede",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_typography_font_family"
+        ],
+        "value": "Inter",
+        "text": "Inter"
+      },
+      {
+        "widget_id": "3d565ede",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_typography_font_weight"
+        ],
+        "value": "500",
+        "text": "500"
+      },
+      {
+        "widget_id": "3d565ede",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_typography_text_transform"
+        ],
+        "value": "none",
+        "text": "none"
+      },
+      {
+        "widget_id": "3d565ede",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_typography_font_style"
+        ],
+        "value": "normal",
+        "text": "normal"
+      },
+      {
+        "widget_id": "3d565ede",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_typography_text_decoration"
+        ],
+        "value": "none",
+        "text": "none"
+      },
+      {
+        "widget_id": "3d565ede",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_color"
+        ],
+        "value": "#FFFFFF",
+        "text": "#FFFFFF"
+      },
+      {
+        "widget_id": "6ddf6d8e",
+        "el_type": "widget",
+        "widget_type": "heading",
+        "path": [
+          "title"
+        ],
+        "value": "Work",
+        "text": "Work"
+      },
+      {
+        "widget_id": "6ddf6d8e",
+        "el_type": "widget",
+        "widget_type": "heading",
+        "path": [
+          "__globals__",
+          "title_color"
+        ],
+        "value": "globals/colors?id=primary",
+        "text": "globals/colors?id=primary"
+      },
+      {
+        "widget_id": "a28ff99",
+        "el_type": "widget",
+        "widget_type": "heading",
+        "path": [
+          "title"
+        ],
+        "value": "We provide brilliant idea\nto grow the startup — agency with your sharp brand.",
+        "text": "We provide brilliant idea\nto grow the startup — agency with your sharp brand."
+      },
+      {
+        "widget_id": "15273b4",
+        "el_type": "widget",
+        "widget_type": "heading",
+        "path": [
+          "title"
+        ],
+        "value": "I docenti della nostra scuola di recitazione",
+        "text": "I docenti della nostra scuola di recitazione"
+      },
+      {
+        "widget_id": "3d516b5",
+        "el_type": "widget",
+        "widget_type": "button",
+        "path": [
+          "text"
+        ],
+        "value": "Fai clic qui",
+        "text": "Fai clic qui"
+      },
+      {
+        "widget_id": "36585d3",
+        "el_type": "widget",
+        "widget_type": "heading",
+        "path": [
+          "title"
+        ],
+        "value": "Giorgia Mangiafesta — Fondatrice & Coach",
+        "text": "Giorgia Mangiafesta — Fondatrice & Coach"
+      },
+      {
+        "widget_id": "10ed624",
+        "el_type": "widget",
+        "widget_type": "button",
+        "path": [
+          "text"
+        ],
+        "value": "conosciamoci",
+        "text": "conosciamoci"
+      },
+      {
+        "widget_id": "15a1b0b9",
+        "el_type": "widget",
+        "widget_type": "divider",
+        "path": [
+          "text"
+        ],
+        "value": "Divider",
+        "text": "Divider"
+      },
+      {
+        "widget_id": "65444f4",
+        "el_type": "widget",
+        "widget_type": "heading",
+        "path": [
+          "title"
+        ],
+        "value": "Marta Zoffoli — Recitazione Cinematografica",
+        "text": "Marta Zoffoli — Recitazione Cinematografica"
+      },
+      {
+        "widget_id": "902bf28",
+        "el_type": "widget",
+        "widget_type": "button",
+        "path": [
+          "text"
+        ],
+        "value": "conosciamoci",
+        "text": "conosciamoci"
+      },
+      {
+        "widget_id": "88978d2",
+        "el_type": "widget",
+        "widget_type": "divider",
+        "path": [
+          "text"
+        ],
+        "value": "Divider",
+        "text": "Divider"
+      },
+      {
+        "widget_id": "b8123c6",
+        "el_type": "widget",
+        "widget_type": "heading",
+        "path": [
+          "title"
+        ],
+        "value": "Chiara Ricci — Seminari Intensivi",
+        "text": "Chiara Ricci — Seminari Intensivi"
+      },
+      {
+        "widget_id": "4f8be3d",
+        "el_type": "widget",
+        "widget_type": "button",
+        "path": [
+          "text"
+        ],
+        "value": "conosciamoci",
+        "text": "conosciamoci"
+      },
+      {
+        "widget_id": "e5a5a2b",
+        "el_type": "widget",
+        "widget_type": "divider",
+        "path": [
+          "text"
+        ],
+        "value": "Divider",
+        "text": "Divider"
+      },
+      {
+        "widget_id": "91ce578",
+        "el_type": "widget",
+        "widget_type": "heading",
+        "path": [
+          "title"
+        ],
+        "value": "Il primo passo? Una chiacchierata.\" \"Che tu stia cercando un corso di recitazione a Roma, lezioni private o un team building aziendale, scrivici e troviamo insieme il percorso giusto.",
+        "text": "Il primo passo? Una chiacchierata.\" \"Che tu stia cercando un corso di recitazione a Roma, lezioni private o un team building aziendale, scrivici e troviamo insieme il percorso giusto."
+      },
+      {
+        "widget_id": "91ce578",
+        "el_type": "widget",
+        "widget_type": "heading",
+        "path": [
+          "title_color"
+        ],
+        "value": "#FFFFFF",
+        "text": "#FFFFFF"
+      },
+      {
+        "widget_id": "1cb9cb0",
+        "el_type": "widget",
+        "widget_type": "button",
+        "path": [
+          "text"
+        ],
+        "value": "Fai clic qui",
+        "text": "Fai clic qui"
+      },
+      {
+        "widget_id": "70324c2d",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_text"
+        ],
+        "value": "Scrivici",
+        "text": "Scrivici"
+      },
+      {
+        "widget_id": "70324c2d",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_text"
+        ],
+        "value": "Raccontaci i tuoi obiettivi tramite il form o una telefonata.",
+        "text": "Raccontaci i tuoi obiettivi tramite il form o una telefonata."
+      },
+      {
+        "widget_id": "70324c2d",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_size"
+        ],
+        "value": "div",
+        "text": "div"
+      },
+      {
+        "widget_id": "70324c2d",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "title_color"
+        ],
+        "value": "globals/colors?id=ace9779",
+        "text": "globals/colors?id=ace9779"
+      },
+      {
+        "widget_id": "70324c2d",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "title_typography_typography"
+        ],
+        "value": "globals/typography?id=primary",
+        "text": "globals/typography?id=primary"
+      },
+      {
+        "widget_id": "70324c2d",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "description_color"
+        ],
+        "value": "globals/colors?id=f9cefcd",
+        "text": "globals/colors?id=f9cefcd"
+      },
+      {
+        "widget_id": "70324c2d",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "description_typography_typography"
+        ],
+        "value": "globals/typography?id=text",
+        "text": "globals/typography?id=text"
+      },
+      {
+        "widget_id": "5b1ef958",
+        "el_type": "widget",
+        "widget_type": "divider",
+        "path": [
+          "text"
+        ],
+        "value": "1",
+        "text": "1"
+      },
+      {
+        "widget_id": "5b1ef958",
+        "el_type": "widget",
+        "widget_type": "divider",
+        "path": [
+          "__globals__",
+          "text_stroke_stroke_color"
+        ],
+        "value": "globals/colors?id=ace9779",
+        "text": "globals/colors?id=ace9779"
+      },
+      {
+        "widget_id": "4f07b67b",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_text"
+        ],
+        "value": "Scegli il percorso",
+        "text": "Scegli il percorso"
+      },
+      {
+        "widget_id": "4f07b67b",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_text"
+        ],
+        "value": "Laboratorio, lezioni private, team building o seminario.",
+        "text": "Laboratorio, lezioni private, team building o seminario."
+      },
+      {
+        "widget_id": "4f07b67b",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_size"
+        ],
+        "value": "div",
+        "text": "div"
+      },
+      {
+        "widget_id": "4f07b67b",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "title_color"
+        ],
+        "value": "globals/colors?id=ace9779",
+        "text": "globals/colors?id=ace9779"
+      },
+      {
+        "widget_id": "4f07b67b",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "title_typography_typography"
+        ],
+        "value": "globals/typography?id=primary",
+        "text": "globals/typography?id=primary"
+      },
+      {
+        "widget_id": "4f07b67b",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "description_color"
+        ],
+        "value": "globals/colors?id=f9cefcd",
+        "text": "globals/colors?id=f9cefcd"
+      },
+      {
+        "widget_id": "4f07b67b",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "description_typography_typography"
+        ],
+        "value": "globals/typography?id=text",
+        "text": "globals/typography?id=text"
+      },
+      {
+        "widget_id": "4389d8dc",
+        "el_type": "widget",
+        "widget_type": "divider",
+        "path": [
+          "text"
+        ],
+        "value": "2",
+        "text": "2"
+      },
+      {
+        "widget_id": "4389d8dc",
+        "el_type": "widget",
+        "widget_type": "divider",
+        "path": [
+          "__globals__",
+          "text_stroke_stroke_color"
+        ],
+        "value": "globals/colors?id=ace9779",
+        "text": "globals/colors?id=ace9779"
+      },
+      {
+        "widget_id": "41e3fef1",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_text"
+        ],
+        "value": "Prenota una lezione di prova",
+        "text": "Prenota una lezione di prova"
+      },
+      {
+        "widget_id": "41e3fef1",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_text"
+        ],
+        "value": "Vieni a conoscerci prima di iscriverti.",
+        "text": "Vieni a conoscerci prima di iscriverti."
+      },
+      {
+        "widget_id": "41e3fef1",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_size"
+        ],
+        "value": "div",
+        "text": "div"
+      },
+      {
+        "widget_id": "41e3fef1",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "title_color"
+        ],
+        "value": "globals/colors?id=ace9779",
+        "text": "globals/colors?id=ace9779"
+      },
+      {
+        "widget_id": "41e3fef1",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "title_typography_typography"
+        ],
+        "value": "globals/typography?id=primary",
+        "text": "globals/typography?id=primary"
+      },
+      {
+        "widget_id": "41e3fef1",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "description_color"
+        ],
+        "value": "globals/colors?id=f9cefcd",
+        "text": "globals/colors?id=f9cefcd"
+      },
+      {
+        "widget_id": "41e3fef1",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "description_typography_typography"
+        ],
+        "value": "globals/typography?id=text",
+        "text": "globals/typography?id=text"
+      },
+      {
+        "widget_id": "69d83beb",
+        "el_type": "widget",
+        "widget_type": "divider",
+        "path": [
+          "text"
+        ],
+        "value": "3",
+        "text": "3"
+      },
+      {
+        "widget_id": "69d83beb",
+        "el_type": "widget",
+        "widget_type": "divider",
+        "path": [
+          "__globals__",
+          "text_stroke_stroke_color"
+        ],
+        "value": "globals/colors?id=ace9779",
+        "text": "globals/colors?id=ace9779"
+      },
+      {
+        "widget_id": "4cc89f84",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_text"
+        ],
+        "value": "Sali sul palco",
+        "text": "Sali sul palco"
+      },
+      {
+        "widget_id": "4cc89f84",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "description_text"
+        ],
+        "value": "Inizi il tuo percorso da Acting Lab",
+        "text": "Inizi il tuo percorso da Acting Lab"
+      },
+      {
+        "widget_id": "4cc89f84",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "title_size"
+        ],
+        "value": "div",
+        "text": "div"
+      },
+      {
+        "widget_id": "4cc89f84",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "title_color"
+        ],
+        "value": "globals/colors?id=ace9779",
+        "text": "globals/colors?id=ace9779"
+      },
+      {
+        "widget_id": "4cc89f84",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "title_typography_typography"
+        ],
+        "value": "globals/typography?id=primary",
+        "text": "globals/typography?id=primary"
+      },
+      {
+        "widget_id": "4cc89f84",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "description_color"
+        ],
+        "value": "globals/colors?id=f9cefcd",
+        "text": "globals/colors?id=f9cefcd"
+      },
+      {
+        "widget_id": "4cc89f84",
+        "el_type": "widget",
+        "widget_type": "icon-box",
+        "path": [
+          "__globals__",
+          "description_typography_typography"
+        ],
+        "value": "globals/typography?id=text",
+        "text": "globals/typography?id=text"
+      },
+      {
+        "widget_id": "5d260569",
+        "el_type": "widget",
+        "widget_type": "divider",
+        "path": [
+          "text"
+        ],
+        "value": "4",
+        "text": "4"
+      },
+      {
+        "widget_id": "5d260569",
+        "el_type": "widget",
+        "widget_type": "divider",
+        "path": [
+          "__globals__",
+          "text_stroke_stroke_color"
+        ],
+        "value": "globals/colors?id=ace9779",
+        "text": "globals/colors?id=ace9779"
+      },
+      {
+        "widget_id": "306df99",
+        "el_type": "widget",
+        "widget_type": "heading",
+        "path": [
+          "title"
+        ],
+        "value": "Richiedi informazioni sui corsi di recitazione",
+        "text": "Richiedi informazioni sui corsi di recitazione"
+      },
+      {
+        "widget_id": "653ec14",
+        "el_type": "widget",
+        "widget_type": "form",
+        "path": [
+          "form_fields",
+          0,
+          "field_label"
+        ],
+        "value": "Name",
+        "text": "Name"
+      },
+      {
+        "widget_id": "653ec14",
+        "el_type": "widget",
+        "widget_type": "form",
+        "path": [
+          "form_fields",
+          0,
+          "placeholder"
+        ],
+        "value": "Name",
+        "text": "Name"
+      },
+      {
+        "widget_id": "653ec14",
+        "el_type": "widget",
+        "widget_type": "form",
+        "path": [
+          "form_fields",
+          1,
+          "field_label"
+        ],
+        "value": "Email",
+        "text": "Email"
+      },
+      {
+        "widget_id": "653ec14",
+        "el_type": "widget",
+        "widget_type": "form",
+        "path": [
+          "form_fields",
+          1,
+          "placeholder"
+        ],
+        "value": "Email",
+        "text": "Email"
+      },
+      {
+        "widget_id": "653ec14",
+        "el_type": "widget",
+        "widget_type": "form",
+        "path": [
+          "form_fields",
+          2,
+          "field_label"
+        ],
+        "value": "Message",
+        "text": "Message"
+      },
+      {
+        "widget_id": "653ec14",
+        "el_type": "widget",
+        "widget_type": "form",
+        "path": [
+          "form_fields",
+          2,
+          "placeholder"
+        ],
+        "value": "Message",
+        "text": "Message"
+      },
+      {
+        "widget_id": "653ec14",
+        "el_type": "widget",
+        "widget_type": "form",
+        "path": [
+          "step_next_label"
+        ],
+        "value": "Next",
+        "text": "Next"
+      },
+      {
+        "widget_id": "653ec14",
+        "el_type": "widget",
+        "widget_type": "form",
+        "path": [
+          "step_previous_label"
+        ],
+        "value": "Previous",
+        "text": "Previous"
+      },
+      {
+        "widget_id": "653ec14",
+        "el_type": "widget",
+        "widget_type": "form",
+        "path": [
+          "button_text"
+        ],
+        "value": "Send",
+        "text": "Send"
+      },
+      {
+        "widget_id": "653ec14",
+        "el_type": "widget",
+        "widget_type": "form",
+        "path": [
+          "email_content"
+        ],
+        "value": "[all-fields]",
+        "text": "[all-fields]"
+      },
+      {
+        "widget_id": "653ec14",
+        "el_type": "widget",
+        "widget_type": "form",
+        "path": [
+          "email_content_2"
+        ],
+        "value": "[all-fields]",
+        "text": "[all-fields]"
+      },
+      {
+        "widget_id": "653ec14",
+        "el_type": "widget",
+        "widget_type": "form",
+        "path": [
+          "success_message"
+        ],
+        "value": "Your submission was successful.",
+        "text": "Your submission was successful."
+      },
+      {
+        "widget_id": "653ec14",
+        "el_type": "widget",
+        "widget_type": "form",
+        "path": [
+          "error_message"
+        ],
+        "value": "Your submission failed because of an error.",
+        "text": "Your submission failed because of an error."
+      },
+      {
+        "widget_id": "653ec14",
+        "el_type": "widget",
+        "widget_type": "form",
+        "path": [
+          "server_message"
+        ],
+        "value": "Your submission failed because of a server error.",
+        "text": "Your submission failed because of a server error."
+      },
+      {
+        "widget_id": "653ec14",
+        "el_type": "widget",
+        "widget_type": "form",
+        "path": [
+          "invalid_message"
+        ],
+        "value": "Your submission failed because the form is invalid.",
+        "text": "Your submission failed because the form is invalid."
+      },
+      {
+        "widget_id": "653ec14",
+        "el_type": "widget",
+        "widget_type": "form",
+        "path": [
+          "required_field_message"
+        ],
+        "value": "This field is required.",
+        "text": "This field is required."
+      },
+      {
+        "widget_id": "653ec14",
+        "el_type": "widget",
+        "widget_type": "form",
+        "path": [
+          "button_background_hover_color"
+        ],
+        "value": "#FFFFFF",
+        "text": "#FFFFFF"
+      },
+      {
+        "widget_id": "653ec14",
+        "el_type": "widget",
+        "widget_type": "form",
+        "path": [
+          "button_hover_color"
+        ],
+        "value": "#000000",
+        "text": "#000000"
+      }
+    ]
+  }
+}
