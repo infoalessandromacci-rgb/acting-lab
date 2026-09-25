@@ -1,0 +1,8 @@
+{
+  "action": "wp_rest",
+  "method": "POST",
+  "route": "wp/v2/pages/199",
+  "payload": {
+    "slug": "giorgia-mangiafesta"
+  }
+}
