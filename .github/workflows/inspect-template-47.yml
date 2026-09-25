@@ -1,0 +1,65 @@
+name: Inspect Elementor About template
+
+on:
+  push:
+    paths:
+      - '.github/workflows/inspect-template-47.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect template 47
+        env:
+          WP_URL: ${{ secrets.WP_URL }}
+          WP_USERNAME: ${{ secrets.WP_USERNAME }}
+          WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+        run: |
+          python - <<'PY'
+          import base64, json, os, urllib.request
+          url=os.environ['WP_URL'].rstrip('/') + '/wp-json/wp/v2/elementor_library?context=edit&include=47&per_page=1'
+          auth=base64.b64encode((os.environ['WP_USERNAME']+':'+os.environ['WP_APP_PASSWORD'].replace(' ','')).encode()).decode()
+          req=urllib.request.Request(url, headers={'Authorization':'Basic '+auth,'Accept':'application/json','User-Agent':'ActingLab-GitHub-Inspect/1.0'})
+          with urllib.request.urlopen(req, timeout=60) as r:
+              items=json.loads(r.read().decode())
+          if not items:
+              raise SystemExit('Template 47 not found')
+          src=items[0]
+          raw=(src.get('meta') or {}).get('_elementor_data')
+          data=json.loads(raw)
+          texts=[]; images=[]
+          def walk(elements):
+              for e in elements:
+                  if not isinstance(e, dict): continue
+                  wid=str(e.get('id','')); wt=str(e.get('widgetType','')); settings=e.get('settings') or {}
+                  def scan(v,path):
+                      if isinstance(v,str):
+                          t=v.strip()
+                          if t and not t.startswith('globals/') and not t.startswith('#') and len(t)<2000:
+                              texts.append({'widget_id':wid,'widget_type':wt,'path':path,'value':v})
+                      elif isinstance(v,list):
+                          for i,x in enumerate(v): scan(x,path+[i])
+                      elif isinstance(v,dict):
+                          for k,x in v.items():
+                              if k in {'image','background_image','background_overlay_image'} and isinstance(x,dict) and x.get('url'):
+                                  images.append({'widget_id':wid,'widget_type':wt,'path':path+[k],'id':x.get('id'),'url':x.get('url'),'alt':x.get('alt','')})
+                              else: scan(x,path+[k])
+                  scan(settings,[])
+                  if isinstance(e.get('elements'),list): walk(e['elements'])
+          walk(data)
+          out={'template_id':47,'title':(src.get('title') or {}).get('raw'),'template':src.get('template'),'text_fields':texts,'images':images}
+          os.makedirs('queue/results',exist_ok=True)
+          open('queue/results/template-47-summary.json','w',encoding='utf-8').write(json.dumps(out,ensure_ascii=False,indent=2))
+          PY
+      - name: Commit summary
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add queue/results/template-47-summary.json
+          git commit -m "Inspect Elementor About template" || exit 0
+          git push
