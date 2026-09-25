@@ -1,0 +1,11 @@
+{
+  "ok": false,
+  "processed_at": "2026-09-25T16:38:06.787342+00:00",
+  "source": "2026-09-25-get-template-47.json",
+  "command": {
+    "action": "wp_rest",
+    "method": "GET",
+    "route": "wp/v2/elementor_library/47?context=edit"
+  },
+  "error": "Expecting value: line 1 column 1 (char 0)"
+}
