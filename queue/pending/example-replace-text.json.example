@@ -1,0 +1,10 @@
+{
+  "action": "replace_text",
+  "page_id": 123,
+  "widget_id": "a1b2c3d",
+  "path": ["title"],
+  "old_text": "Vecchio testo",
+  "new_text": "Nuovo testo",
+  "dry_run": true,
+  "replace_all": false
+}
