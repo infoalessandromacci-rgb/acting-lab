@@ -1,0 +1,60 @@
+{
+  "ok": true,
+  "processed_at": "2026-09-25T16:12:05.306018+00:00",
+  "source": "2026-09-25-clean-divider-placeholder.json",
+  "command": {
+    "action": "replace_text_batch",
+    "page_id": 7,
+    "dry_run": false,
+    "replacements": [
+      {
+        "widget_id": "15a1b0b9",
+        "path": [
+          "text"
+        ],
+        "old_text": "Divider",
+        "new_text": ""
+      },
+      {
+        "widget_id": "88978d2",
+        "path": [
+          "text"
+        ],
+        "old_text": "Divider",
+        "new_text": ""
+      },
+      {
+        "widget_id": "e5a5a2b",
+        "path": [
+          "text"
+        ],
+        "old_text": "Divider",
+        "new_text": ""
+      }
+    ]
+  },
+  "result": {
+    "page_id": 7,
+    "dry_run": false,
+    "total": 3,
+    "successful": 0,
+    "failed": 3,
+    "results": [
+      {
+        "index": 1,
+        "ok": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "index": 2,
+        "ok": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      },
+      {
+        "index": 3,
+        "ok": false,
+        "error": "Expecting value: line 1 column 1 (char 0)"
+      }
+    ]
+  }
+}
