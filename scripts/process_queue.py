@@ -71,6 +71,18 @@ def is_content_field(field: dict) -> bool:
     return any(marker in leaf for marker in content_markers)
 
 
+def replace_text(page_id: int, item: dict, default_dry_run=False):
+    payload = {
+        'widget_id': item['widget_id'],
+        'path': item['path'],
+        'old_text': item['old_text'],
+        'new_text': item.get('new_text', ''),
+        'replace_all': bool(item.get('replace_all', False)),
+        'dry_run': bool(item.get('dry_run', default_dry_run)),
+    }
+    return request('POST', f'acting-lab/v1/pages/{page_id}/replace-text', payload)[1]
+
+
 def process(command: dict):
     action = command.get('action')
     if action == 'status':
@@ -104,15 +116,26 @@ def process(command: dict):
 
     if action == 'replace_text':
         page_id = int(command['page_id'])
-        payload = {
-            'widget_id': command['widget_id'],
-            'path': command['path'],
-            'old_text': command['old_text'],
-            'new_text': command.get('new_text', ''),
-            'replace_all': bool(command.get('replace_all', False)),
-            'dry_run': bool(command.get('dry_run', False)),
+        return replace_text(page_id, command)
+
+    if action == 'replace_text_batch':
+        page_id = int(command['page_id'])
+        dry_run = bool(command.get('dry_run', False))
+        results = []
+        for index, item in enumerate(command.get('replacements', []), start=1):
+            try:
+                result = replace_text(page_id, item, default_dry_run=dry_run)
+                results.append({'index': index, 'ok': True, 'result': result})
+            except Exception as exc:
+                results.append({'index': index, 'ok': False, 'error': str(exc)})
+        return {
+            'page_id': page_id,
+            'dry_run': dry_run,
+            'total': len(results),
+            'successful': sum(1 for x in results if x['ok']),
+            'failed': sum(1 for x in results if not x['ok']),
+            'results': results,
         }
-        return request('POST', f'acting-lab/v1/pages/{page_id}/replace-text', payload)[1]
 
     raise ValueError(f'Unsupported action: {action!r}')
 
