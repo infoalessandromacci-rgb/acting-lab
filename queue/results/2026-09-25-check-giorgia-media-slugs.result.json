@@ -1,0 +1,11 @@
+{
+  "ok": false,
+  "processed_at": "2026-09-25T16:56:47.576557+00:00",
+  "source": "2026-09-25-check-giorgia-media-slugs.json",
+  "command": {
+    "action": "wp_rest",
+    "method": "GET",
+    "route": "wp/v2/media?search=Giorgia&per_page=100&_fields=id,title,slug,status,source_url"
+  },
+  "error": "Expecting value: line 1 column 1 (char 0)"
+}
