@@ -1,0 +1,5 @@
+{
+  "action": "wp_rest",
+  "method": "GET",
+  "route": "wp/v2/pages/199?context=edit&_fields=id,title,slug,status,template,link,meta"
+}
