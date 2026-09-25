@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "processed_at": "2026-09-25T15:59:28.659877+00:00",
+  "source": "2026-09-25-status-test.json",
+  "command": {
+    "action": "status"
+  },
+  "result": {
+    "ok": true,
+    "plugin": "acting-lab-bridge",
+    "version": "0.1.0",
+    "elementor_active": true,
+    "user_id": 2
+  }
+}
