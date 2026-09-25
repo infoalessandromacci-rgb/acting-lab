@@ -57,6 +57,20 @@ def request(method: str, route: str, payload=None):
         raise RuntimeError(f'Could not reach WordPress: {exc.reason}') from exc
 
 
+def is_content_field(field: dict) -> bool:
+    if field.get('el_type') != 'widget':
+        return False
+    path = field.get('path') or []
+    if not path:
+        return False
+    leaf = str(path[-1]).lower()
+    content_markers = (
+        'title', 'text', 'content', 'label', 'placeholder', 'message',
+        'caption', 'description', 'button', 'heading', 'subheading'
+    )
+    return any(marker in leaf for marker in content_markers)
+
+
 def process(command: dict):
     action = command.get('action')
     if action == 'status':
@@ -75,6 +89,18 @@ def process(command: dict):
     if action == 'read_page':
         page_id = int(command['page_id'])
         return request('GET', f'acting-lab/v1/pages/{page_id}')[1]
+
+    if action == 'read_widget_texts':
+        page_id = int(command['page_id'])
+        page = request('GET', f'acting-lab/v1/pages/{page_id}')[1]
+        fields = [f for f in page.get('text_fields', []) if is_content_field(f)]
+        return {
+            'id': page.get('id'),
+            'title': page.get('title'),
+            'url': page.get('url'),
+            'count': len(fields),
+            'text_fields': fields,
+        }
 
     if action == 'replace_text':
         page_id = int(command['page_id'])
