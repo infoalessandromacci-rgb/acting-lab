@@ -137,6 +137,16 @@ def process(command: dict):
             'results': results,
         }
 
+    if action == 'wp_rest':
+        method = str(command.get('method', 'GET')).upper()
+        route = str(command.get('route', '')).lstrip('/')
+        if method not in {'GET', 'POST', 'PUT'}:
+            raise ValueError('wp_rest only allows GET, POST or PUT')
+        if not route.startswith('wp/v2/'):
+            raise ValueError('wp_rest route must start with wp/v2/')
+        payload = command.get('payload') if method in {'POST', 'PUT'} else None
+        return request(method, route, payload)[1]
+
     raise ValueError(f'Unsupported action: {action!r}')
 
 
