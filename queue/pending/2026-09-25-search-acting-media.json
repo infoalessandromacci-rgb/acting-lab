@@ -1,0 +1,5 @@
+{
+  "action": "wp_rest",
+  "method": "GET",
+  "route": "wp/v2/media?search=recitazione&per_page=100&_fields=id,title,slug,source_url,alt_text"
+}
