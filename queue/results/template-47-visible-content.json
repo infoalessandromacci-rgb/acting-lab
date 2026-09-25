@@ -1,0 +1,509 @@
+{
+  "template_id": 47,
+  "title": "About US",
+  "template": "elementor_header_footer",
+  "visible_fields": [
+    {
+      "widget_id": "ea13ad4",
+      "widget_type": "",
+      "path": [
+        "flex_justify_content"
+      ],
+      "value": "center",
+      "text": "center"
+    },
+    {
+      "widget_id": "87281ac",
+      "widget_type": "heading",
+      "path": [
+        "title"
+      ],
+      "value": "About",
+      "text": "About"
+    },
+    {
+      "widget_id": "38635bfe",
+      "widget_type": "",
+      "path": [
+        "flex_justify_content_laptop"
+      ],
+      "value": "center",
+      "text": "center"
+    },
+    {
+      "widget_id": "68df0282",
+      "widget_type": "icon-list",
+      "path": [
+        "icon_list",
+        0,
+        "text"
+      ],
+      "value": "Home",
+      "text": "Home"
+    },
+    {
+      "widget_id": "68df0282",
+      "widget_type": "icon-list",
+      "path": [
+        "icon_list",
+        1,
+        "text"
+      ],
+      "value": "/",
+      "text": "/"
+    },
+    {
+      "widget_id": "68df0282",
+      "widget_type": "icon-list",
+      "path": [
+        "icon_list",
+        2,
+        "text"
+      ],
+      "value": "About",
+      "text": "About"
+    },
+    {
+      "widget_id": "1d9cc2a5",
+      "widget_type": "",
+      "path": [
+        "flex_justify_content"
+      ],
+      "value": "center",
+      "text": "center"
+    },
+    {
+      "widget_id": "74079ad7",
+      "widget_type": "text-editor",
+      "path": [
+        "editor"
+      ],
+      "value": "<p>It has stood the test of time and proceeds Elevate your brand with the Agencyo Agency – everything from strategy to advertising &amp; scale.</p>",
+      "text": "It has stood the test of time and proceeds Elevate your brand with the Agencyo Agency – everything from strategy to advertising &amp; scale."
+    },
+    {
+      "widget_id": "47a689e4",
+      "widget_type": "counter",
+      "path": [
+        "title"
+      ],
+      "value": "Clients Served",
+      "text": "Clients Served"
+    },
+    {
+      "widget_id": "217800ef",
+      "widget_type": "counter",
+      "path": [
+        "title"
+      ],
+      "value": "World Branch ",
+      "text": "World Branch"
+    },
+    {
+      "widget_id": "69a70bab",
+      "widget_type": "",
+      "path": [
+        "flex_justify_content"
+      ],
+      "value": "space-between",
+      "text": "space-between"
+    },
+    {
+      "widget_id": "69a70bab",
+      "widget_type": "",
+      "path": [
+        "flex_justify_content_laptop"
+      ],
+      "value": "space-between",
+      "text": "space-between"
+    },
+    {
+      "widget_id": "69a70bab",
+      "widget_type": "",
+      "path": [
+        "flex_justify_content_mobile"
+      ],
+      "value": "space-between",
+      "text": "space-between"
+    },
+    {
+      "widget_id": "4b1482da",
+      "widget_type": "heading",
+      "path": [
+        "title"
+      ],
+      "value": " art direction",
+      "text": "art direction"
+    },
+    {
+      "widget_id": "135cfcb1",
+      "widget_type": "heading",
+      "path": [
+        "title"
+      ],
+      "value": " motion graphics",
+      "text": "motion graphics"
+    },
+    {
+      "widget_id": "699733ef",
+      "widget_type": "heading",
+      "path": [
+        "title"
+      ],
+      "value": " branding",
+      "text": "branding"
+    },
+    {
+      "widget_id": "2ea456b0",
+      "widget_type": "heading",
+      "path": [
+        "title"
+      ],
+      "value": " product design",
+      "text": "product design"
+    },
+    {
+      "widget_id": "6c7f72e3",
+      "widget_type": "heading",
+      "path": [
+        "title"
+      ],
+      "value": " development",
+      "text": "development"
+    },
+    {
+      "widget_id": "551da820",
+      "widget_type": "heading",
+      "path": [
+        "title"
+      ],
+      "value": " digital marketing",
+      "text": "digital marketing"
+    },
+    {
+      "widget_id": "17d4af71",
+      "widget_type": "heading",
+      "path": [
+        "title"
+      ],
+      "value": " strategy",
+      "text": "strategy"
+    },
+    {
+      "widget_id": "4b9c8bbb",
+      "widget_type": "",
+      "path": [
+        "flex_justify_content"
+      ],
+      "value": "center",
+      "text": "center"
+    },
+    {
+      "widget_id": "40681d1c",
+      "widget_type": "",
+      "path": [
+        "flex_justify_content_mobile_extra"
+      ],
+      "value": "center",
+      "text": "center"
+    },
+    {
+      "widget_id": "445bc828",
+      "widget_type": "counter",
+      "path": [
+        "title"
+      ],
+      "value": "Team Members",
+      "text": "Team Members"
+    },
+    {
+      "widget_id": "70a18764",
+      "widget_type": "counter",
+      "path": [
+        "title"
+      ],
+      "value": "Years of experience",
+      "text": "Years of experience"
+    },
+    {
+      "widget_id": "6a9d1fea",
+      "widget_type": "counter",
+      "path": [
+        "title"
+      ],
+      "value": "Happy Customers",
+      "text": "Happy Customers"
+    },
+    {
+      "widget_id": "310bf87c",
+      "widget_type": "",
+      "path": [
+        "flex_justify_content"
+      ],
+      "value": "center",
+      "text": "center"
+    },
+    {
+      "widget_id": "10a8f88",
+      "widget_type": "",
+      "path": [
+        "flex_justify_content_mobile"
+      ],
+      "value": "center",
+      "text": "center"
+    },
+    {
+      "widget_id": "2b58df2",
+      "widget_type": "icon-box",
+      "path": [
+        "description_text"
+      ],
+      "value": "Make your business prosper with our great team of experts. We’ll make your.",
+      "text": "Make your business prosper with our great team of experts. We’ll make your."
+    },
+    {
+      "widget_id": "1154cbc7",
+      "widget_type": "text-editor",
+      "path": [
+        "editor"
+      ],
+      "value": "consumers today rely heavily on digital means to research products. we research a brand of bldend engaging with it, according to the meanwhile, 51% of consumers",
+      "text": "consumers today rely heavily on digital means to research products. we research a brand of bldend engaging with it, according to the meanwhile, 51% of consumers"
+    },
+    {
+      "widget_id": "1485e29",
+      "widget_type": "",
+      "path": [
+        "flex_justify_content"
+      ],
+      "value": "center",
+      "text": "center"
+    },
+    {
+      "widget_id": "7b45ba38",
+      "widget_type": "text-editor",
+      "path": [
+        "editor"
+      ],
+      "value": "<p>We helped to get companies</p>",
+      "text": "We helped to get companies"
+    },
+    {
+      "widget_id": "43ee587f",
+      "widget_type": "",
+      "path": [
+        "flex_justify_content"
+      ],
+      "value": "center",
+      "text": "center"
+    },
+    {
+      "widget_id": "476dedbb",
+      "widget_type": "text-editor",
+      "path": [
+        "editor"
+      ],
+      "value": "<p>We helped to get companies</p>",
+      "text": "We helped to get companies"
+    },
+    {
+      "widget_id": "26349dd2",
+      "widget_type": "heading",
+      "path": [
+        "title"
+      ],
+      "value": "Work",
+      "text": "Work"
+    },
+    {
+      "widget_id": "763198a6",
+      "widget_type": "",
+      "path": [
+        "flex_justify_content"
+      ],
+      "value": "center",
+      "text": "center"
+    },
+    {
+      "widget_id": "6e3f4004",
+      "widget_type": "",
+      "path": [
+        "flex_justify_content_mobile_extra"
+      ],
+      "value": "center",
+      "text": "center"
+    },
+    {
+      "widget_id": "1f4cc4f0",
+      "widget_type": "",
+      "path": [
+        "flex_justify_content"
+      ],
+      "value": "center",
+      "text": "center"
+    },
+    {
+      "widget_id": "14e16dd6",
+      "widget_type": "counter",
+      "path": [
+        "title"
+      ],
+      "value": "Team Members",
+      "text": "Team Members"
+    },
+    {
+      "widget_id": "4482e01f",
+      "widget_type": "",
+      "path": [
+        "flex_justify_content"
+      ],
+      "value": "center",
+      "text": "center"
+    },
+    {
+      "widget_id": "596c1e5f",
+      "widget_type": "counter",
+      "path": [
+        "title"
+      ],
+      "value": "Years of experience",
+      "text": "Years of experience"
+    },
+    {
+      "widget_id": "4aae5682",
+      "widget_type": "",
+      "path": [
+        "flex_justify_content"
+      ],
+      "value": "center",
+      "text": "center"
+    },
+    {
+      "widget_id": "7975df95",
+      "widget_type": "counter",
+      "path": [
+        "title"
+      ],
+      "value": "Happy Customers",
+      "text": "Happy Customers"
+    },
+    {
+      "widget_id": "6bc15661",
+      "widget_type": "",
+      "path": [
+        "flex_justify_content"
+      ],
+      "value": "center",
+      "text": "center"
+    },
+    {
+      "widget_id": "64197ed4",
+      "widget_type": "counter",
+      "path": [
+        "title"
+      ],
+      "value": "worldwide clients",
+      "text": "worldwide clients"
+    }
+  ],
+  "images": [
+    {
+      "widget_id": "6f362832",
+      "id": "16",
+      "url": "https://actinglab.it/wp-content/uploads/2026/09/Footer-Shap.png",
+      "alt": ""
+    },
+    {
+      "widget_id": "22e85c28",
+      "id": "16",
+      "url": "https://actinglab.it/wp-content/uploads/2026/09/Footer-Shap.png",
+      "alt": ""
+    },
+    {
+      "widget_id": "6406f97e",
+      "id": "24",
+      "url": "https://actinglab.it/wp-content/uploads/2026/09/Mreq.png",
+      "alt": ""
+    },
+    {
+      "widget_id": "2e98e683",
+      "id": "24",
+      "url": "https://actinglab.it/wp-content/uploads/2026/09/Mreq.png",
+      "alt": ""
+    },
+    {
+      "widget_id": "26ea0372",
+      "id": "24",
+      "url": "https://actinglab.it/wp-content/uploads/2026/09/Mreq.png",
+      "alt": ""
+    },
+    {
+      "widget_id": "3fac2b31",
+      "id": "24",
+      "url": "https://actinglab.it/wp-content/uploads/2026/09/Mreq.png",
+      "alt": ""
+    },
+    {
+      "widget_id": "4df93aab",
+      "id": "24",
+      "url": "https://actinglab.it/wp-content/uploads/2026/09/Mreq.png",
+      "alt": ""
+    },
+    {
+      "widget_id": "6edd99b3",
+      "id": "24",
+      "url": "https://actinglab.it/wp-content/uploads/2026/09/Mreq.png",
+      "alt": ""
+    },
+    {
+      "widget_id": "493c6b77",
+      "id": "24",
+      "url": "https://actinglab.it/wp-content/uploads/2026/09/Mreq.png",
+      "alt": ""
+    },
+    {
+      "widget_id": "1b3f6f3c",
+      "setting": "background_image",
+      "id": "29",
+      "url": "https://actinglab.it/wp-content/uploads/2026/09/Shap.png",
+      "alt": ""
+    },
+    {
+      "widget_id": "1b3f6f3c",
+      "setting": "background_overlay_image",
+      "id": "31",
+      "url": "https://actinglab.it/wp-content/uploads/2026/09/wretryul2.png",
+      "alt": ""
+    },
+    {
+      "widget_id": "5eeb6093",
+      "id": "36",
+      "url": "https://actinglab.it/wp-content/uploads/2026/09/httpselements.envato.comsmiling-couple-communicating-with-their-insurance-Q2VEF73.jpg",
+      "alt": ""
+    },
+    {
+      "widget_id": "d46fb22",
+      "id": "38",
+      "url": "https://actinglab.it/wp-content/uploads/2026/09/httpselements.envato.combusiness-team-working-with-computer-online-busines-DVSDMGU.jpg",
+      "alt": ""
+    },
+    {
+      "widget_id": "916016c",
+      "id": "27",
+      "url": "https://actinglab.it/wp-content/uploads/2026/09/Arrow1.png",
+      "alt": ""
+    },
+    {
+      "widget_id": "42a37690",
+      "id": "27",
+      "url": "https://actinglab.it/wp-content/uploads/2026/09/Arrow1.png",
+      "alt": ""
+    },
+    {
+      "widget_id": "1f2e9969",
+      "id": "24",
+      "url": "https://actinglab.it/wp-content/uploads/2026/09/Mreq.png",
+      "alt": ""
+    }
+  ]
+}
