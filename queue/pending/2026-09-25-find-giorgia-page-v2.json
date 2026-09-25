@@ -1,0 +1,5 @@
+{
+  "action": "wp_rest",
+  "method": "GET",
+  "route": "wp/v2/pages?context=edit&search=Giorgia&per_page=20&_fields=id,title,slug,status,link,template"
+}
