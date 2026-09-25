@@ -1,0 +1,25 @@
+{
+  "action": "replace_text_batch",
+  "page_id": 7,
+  "dry_run": false,
+  "replacements": [
+    {
+      "widget_id": "15a1b0b9",
+      "path": ["text"],
+      "old_text": "Divider",
+      "new_text": "—"
+    },
+    {
+      "widget_id": "88978d2",
+      "path": ["text"],
+      "old_text": "Divider",
+      "new_text": "—"
+    },
+    {
+      "widget_id": "e5a5a2b",
+      "path": ["text"],
+      "old_text": "Divider",
+      "new_text": "—"
+    }
+  ]
+}
